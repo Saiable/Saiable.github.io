@@ -1,0 +1,14 @@
+/*normalize*/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+input {
+    padding: 0;
+    outline: 0;
+    border: none;
+
+}

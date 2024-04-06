@@ -10,7 +10,7 @@
     "deploy": "hexo deploy",
     "algolia": "hexo algolia",
     "server": "hexo server -p 8081",
-    "copy": "copy D:\\workspace\\github\\code\\saiable.github.io\\hexo-blog\\CNAME D:\\workspace\\github\\code\\saiable.github.io\\hexo-blog\\public",
+    "copy": "copy E:\\workspace\\saiable.github.io\\hexo-blog\\CNAME E:\\workspace\\saiable.github.io\\hexo-blog\\public",
     "auto": "hexo clean & npm run build & npm run algolia & npm run copy & npm run deploy"
   },
   "hexo": {
