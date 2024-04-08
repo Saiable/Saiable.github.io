@@ -1,0 +1,299 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>python_with关键字 | 吕小布の博客</title><meta name="keywords" content="吕小布;博客;生活记录"><meta name="author" content="Sai"><meta name="copyright" content="Sai"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="1. 上下文管理器概念Context Manager指的是python在执行一段代码前后，做的一些预处理和后处理，使得代码块运行处于一个小的环境（surrounding），出了这个小环境之后，资源释放，环境中的各种配置也失效。 例如在打开文件需要关闭，连接数据库后需要关闭连接。很多优雅第三方库也会利用上下文使得对象进入特定的某种状态。 2. with关键字with的基本用法如下： 12with E">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python_with关键字">
+<meta property="og:url" content="https://mindcons.cn/2022/08/09/md/python/python%E8%BF%9B%E9%98%B6/python_with%E5%85%B3%E9%94%AE%E5%AD%97/index.html">
+<meta property="og:site_name" content="吕小布の博客">
+<meta property="og:description" content="1. 上下文管理器概念Context Manager指的是python在执行一段代码前后，做的一些预处理和后处理，使得代码块运行处于一个小的环境（surrounding），出了这个小环境之后，资源释放，环境中的各种配置也失效。 例如在打开文件需要关闭，连接数据库后需要关闭连接。很多优雅第三方库也会利用上下文使得对象进入特定的某种状态。 2. with关键字with的基本用法如下： 12with E">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://bu.dusays.com/2023/02/10/63e583843360e.webp">
+<meta property="article:published_time" content="2022-08-09T01:03:02.000Z">
+<meta property="article:modified_time" content="2024-04-08T22:08:07.152Z">
+<meta property="article:author" content="Sai">
+<meta property="article:tag" content="吕小布;博客;生活记录">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://bu.dusays.com/2023/02/10/63e583843360e.webp"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://mindcons.cn/2022/08/09/md/python/python%E8%BF%9B%E9%98%B6/python_with%E5%85%B3%E9%94%AE%E5%AD%97/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"61301LMFP2","apiKey":"a7627d15f4af23df7fbc3e2922471858","indexName":"mindcons","hits":{"per_page":10},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":350},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: Sai","link":"链接: ","source":"来源: 吕小布の博客","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'python_with关键字',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-04-09 06:08:07'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/custom/css/custom.min.css"><meta name="generator" content="Hexo 6.2.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://bu.dusays.com/2023/02/10/63e583843360e.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">181</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">61</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">44</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fa-sharp fa-solid fa-photo-film"></i><span> 相册</span></a></li><li><a class="site-page child" href="/bangumis/"><i class="fa-fw fas fa-video"></i><span> 番剧</span></a></li><li><a class="site-page child" href="/booklist/"><i class="fa-fw fa-solid fa-book"></i><span> 书单</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/sponsorWall/"><i class="fa-fw fas fa-money-check-alt"></i><span> 赞助墙</span></a></div><div class="menus_item"><a class="site-page" href="/comment/"><i class="fa-fw fas fa-comments"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">吕小布の博客</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fa-sharp fa-solid fa-photo-film"></i><span> 相册</span></a></li><li><a class="site-page child" href="/bangumis/"><i class="fa-fw fas fa-video"></i><span> 番剧</span></a></li><li><a class="site-page child" href="/booklist/"><i class="fa-fw fa-solid fa-book"></i><span> 书单</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/sponsorWall/"><i class="fa-fw fas fa-money-check-alt"></i><span> 赞助墙</span></a></div><div class="menus_item"><a class="site-page" href="/comment/"><i class="fa-fw fas fa-comments"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">python_with关键字</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-08-09T01:03:02.000Z" title="发表于 2022-08-09 09:03:02">2022-08-09</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-04-08T22:08:07.152Z" title="更新于 2024-04-09 06:08:07">2024-04-09</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="python_with关键字"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="1-上下文管理器概念"><a href="#1-上下文管理器概念" class="headerlink" title="1. 上下文管理器概念"></a>1. 上下文管理器概念</h2><p>Context Manager指的是python在执行一段代码前后，做的一些预处理和后处理，使得代码块运行处于一个小的环境（surrounding），出了这个小环境之后，资源释放，环境中的各种配置也失效。</p>
+<p>例如在打开文件需要关闭，连接数据库后需要关闭连接。很多优雅第三方库也会利用上下文使得对象进入特定的某种状态。</p>
+<h2 id="2-with关键字"><a href="#2-with关键字" class="headerlink" title="2. with关键字"></a>2. with关键字</h2><p>with的基本用法如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> EXPR <span class="keyword">as</span> VAR:</span><br><span class="line">  BLOCK</span><br></pre></td></tr></table></figure>
+
+<p>其中发生了一系列过程：</p>
+<ol>
+<li>EXPR语句被执行，得到ContextManager</li>
+<li>调用ContextManager.__enter__方法</li>
+<li>如果有as VAR，则ContextManager.__enter__的返回值赋给VAR，否则就不管返回值</li>
+<li>执行BLOCK，如果有VAR被用到，就和普通变量一样</li>
+<li>调用ContextManager.__exit__方法<ul>
+<li>__exit__有三个参数：type, value, traceback，BLOCK出异常时会得到对应值，正常情况就都为None</li>
+<li>__exit__返回值为True表示BLOCK中出现的异常可以忽略，False表示需要raise</li>
+</ul>
+</li>
+</ol>
+<h2 id="3-例子"><a href="#3-例子" class="headerlink" title="3. 例子"></a>3. 例子</h2><h3 id="3-1-资源操作："><a href="#3-1-资源操作：" class="headerlink" title="3.1 资源操作："></a>3.1 资源操作：</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">CustomOpen</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, filename: <span class="built_in">str</span></span>):</span><br><span class="line">        self.__filename = filename</span><br><span class="line">        self.__handler = <span class="literal">None</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__enter__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;enter......&quot;</span>)</span><br><span class="line">        self.__handler = <span class="built_in">open</span>(self.__filename)</span><br><span class="line">        <span class="keyword">return</span> self.__handler</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__exit__</span>(<span class="params">self, exc_type, exc_val, exc_tb</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;exit...&quot;</span>, exc_type, exc_val, exc_tb)</span><br><span class="line">        <span class="keyword">if</span> self.__handler <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">            self.__handler.close()</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> CustomOpen(<span class="string">&quot;hello.txt&quot;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    <span class="built_in">print</span>(f.read())</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">enter......</span><br><span class="line">hello world</span><br><span class="line"><span class="built_in">exit</span>... None None None</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-2-状态维护"><a href="#3-2-状态维护" class="headerlink" title="3.2 状态维护"></a>3.2 状态维护</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">CustomBrain</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        self.__status = <span class="string">&quot;normal&quot;</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">say</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">if</span> self.__status == <span class="string">&quot;normal&quot;</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;You&#x27;re a great man&quot;</span>)</span><br><span class="line">        <span class="keyword">elif</span> self.__status == <span class="string">&quot;special&quot;</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;You are a very outstanding person &quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__enter__</span>(<span class="params">self</span>):</span><br><span class="line">        self.__status = <span class="string">&quot;special&quot;</span></span><br><span class="line"></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__exit__</span>(<span class="params">self, exc_type, exc_val, exc_tb</span>):</span><br><span class="line">        self.__status = <span class="string">&quot;normal&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">brain = CustomBrain()</span><br><span class="line">brain.say() <span class="comment"># 普通状态</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 可以通过上下文维护一些状态</span></span><br><span class="line"><span class="keyword">with</span> brain:</span><br><span class="line">    brain.say() <span class="comment"># 特殊状态</span></span><br><span class="line"></span><br><span class="line">brain.say() <span class="comment"># 普通状态</span></span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">You<span class="string">&#x27;re a great man</span></span><br><span class="line"><span class="string">You are a very outstanding person</span></span><br><span class="line"><span class="string">You&#x27;</span>re a great man</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-使用contextlib简化编写"><a href="#4-使用contextlib简化编写" class="headerlink" title="4. 使用contextlib简化编写"></a>4. 使用contextlib简化编写</h2><p>python内置的标准库contextlib可以是的代码书写更加简洁，本质是一样的。比较有用的是contextlib.contextmanager这个装饰器，被装饰的函数在yield的前面相当于__enter__，yield的后面相当于__exit__，yield本身的返回值赋给as后的变量</p>
+<p>所以第一个示例可以这么写：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> contextlib <span class="keyword">import</span> contextmanager</span><br><span class="line"></span><br><span class="line"><span class="meta">@contextmanager</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">custom_open</span>(<span class="params">filename: <span class="built_in">str</span></span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;enter......&quot;</span>)</span><br><span class="line">    handler = <span class="built_in">open</span>(filename)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">yield</span> handler</span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;exit...&quot;</span>)</span><br><span class="line">    handler.close()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> custom_open(<span class="string">&quot;hello.txt&quot;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    <span class="built_in">print</span>(f.read())</span><br></pre></td></tr></table></figure>
+
+<p>还是优雅了许多~</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a target="_blank" rel="noopener" href="https://github.com/Saiable">Sai</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://mindcons.cn/2022/08/09/md/python/python%E8%BF%9B%E9%98%B6/python_with%E5%85%B3%E9%94%AE%E5%AD%97/">https://mindcons.cn/2022/08/09/md/python/python进阶/python_with关键字/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://mindcons.cn" target="_blank">吕小布の博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://bu.dusays.com/2023/02/10/63e583843360e.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://bu.dusays.com/2023/02/10/63e580229ee01.webp" target="_blank"><img class="post-qr-code-img" src="https://bu.dusays.com/2023/02/10/63e580229ee01.webp" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://bu.dusays.com/2023/02/09/63e48775d4f42.webp" target="_blank"><img class="post-qr-code-img" src="https://bu.dusays.com/2023/02/09/63e48775d4f42.webp" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/08/09/md/python/django/django_%E5%9F%BA%E7%A1%80/"><img class="prev-cover" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">django基础</div></div></a></div><div class="next-post pull-right"><a href="/2022/08/09/md/python/python%E8%BF%9B%E9%98%B6/python_%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"><img class="next-cover" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">python_网络编程</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://bu.dusays.com/2023/02/10/63e583843360e.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Sai</div><div class="author-info__description">天可补,海可填,南山可移。日月既往,不可复追。</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">181</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">61</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">44</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Saiable"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://bu.dusays.com/2023/02/10/63e57e822f198.webp" target="_blank" title="QQ"><i class="fa-brands fa-qq"></i></a><a class="social-icon" href="https://bu.dusays.com/2023/02/10/63e57f8ac9fae.webp" target="_blank" title="WeChat"><i class="fa-brands fa-weixin"></i></a><a class="social-icon" href="https://github.com/Saiable" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:mindcons@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">日月既往,不可复追。</div></div><div class="xpand" style="height:200px;"><canvas class="illo" width="800" height="800" style="max-width: 200px; max-height: 200px; touch-action: none; width: 640px; height: 640px;"></canvas></div><script src="https://npm.elemecdn.com/ethan4116-blog/lib/js/other/two-people/twopeople1.js"></script><script src="https://npm.elemecdn.com/ethan4116-blog/lib/js/other/two-people/zdog.dist.js"></script><script id="rendered-js" src="https://npm.elemecdn.com/ethan4116-blog/lib/js/other/two-people/twopeople.js"></script><style>.card-widget.card-announcement {
+margin: 0;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+canvas {
+display: block;
+margin: 0 auto;
+cursor: move;
+}</style><div class="card-widget tzy-right-widget" id="card-wechat"><div id="flip-wrapper"><div id="flip-content"><div class="face"></div><div class="back face"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E4%B8%8A%E4%B8%8B%E6%96%87%E7%AE%A1%E7%90%86%E5%99%A8%E6%A6%82%E5%BF%B5"><span class="toc-number">1.</span> <span class="toc-text">1. 上下文管理器概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-with%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">2.</span> <span class="toc-text">2. with关键字</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E4%BE%8B%E5%AD%90"><span class="toc-number">3.</span> <span class="toc-text">3. 例子</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E8%B5%84%E6%BA%90%E6%93%8D%E4%BD%9C%EF%BC%9A"><span class="toc-number">3.1.</span> <span class="toc-text">3.1 资源操作：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E7%8A%B6%E6%80%81%E7%BB%B4%E6%8A%A4"><span class="toc-number">3.2.</span> <span class="toc-text">3.2 状态维护</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E4%BD%BF%E7%94%A8contextlib%E7%AE%80%E5%8C%96%E7%BC%96%E5%86%99"><span class="toc-number">4.</span> <span class="toc-text">4. 使用contextlib简化编写</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/04/05/md/life/%E6%8A%A4%E8%82%A4%E6%B2%BB%E7%97%98%E7%B3%BB%E5%88%97/" title="护肤治痘系列">护肤治痘系列</a><time datetime="2024-04-05T10:48:52.636Z" title="发表于 2024-04-05 18:48:52">2024-04-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/04/05/md/data/%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4/" title="无题"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2024/04/05/md/data/%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4/" title="无题">无题</a><time datetime="2024-04-05T10:48:52.357Z" title="发表于 2024-04-05 18:48:52">2024-04-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/04/05/md/data/%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8/ppocrlabel%E5%AE%89%E8%A3%85/" title="ppocrlabel安装及使用">ppocrlabel安装及使用</a><time datetime="2024-04-05T10:48:52.340Z" title="发表于 2024-04-05 18:48:52">2024-04-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/12/01/md/data/%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8/labelStudio%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/" title="labelStudio安装及使用">labelStudio安装及使用</a><time datetime="2023-11-30T22:12:44.739Z" title="发表于 2023-12-01 06:12:44">2023-12-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/12/01/md/data/%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8/brat%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4/" title="brat安装步骤及注意事项">brat安装步骤及注意事项</a><time datetime="2023-11-30T22:12:44.726Z" title="发表于 2023-12-01 06:12:44">2023-12-01</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://bu.dusays.com/2023/02/10/63e57cef87293.webp')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 <i id="heartbeat" class="fa fas fa-heartbeat"></i> Sai</div><a href="https://icp.gov.moe/?keyword=20230203" target="_blank">萌ICP备20230203号</a><div class="footer_custom_text"><p><a target="_blank" href="https://hexo.io/"><img src="https://bu.dusays.com/2023/02/09/63e488a78b827.webp" title="博客框架为Hexo"></a>&nbsp;<a target="_blank" href="https://butterfly.js.org/"><img src="https://bu.dusays.com/2023/02/10/63e57f321880a.webp" title="主题采用butterfly"></a></p></div></div><link rel="stylesheet" href="/custom/css/heartbeat.min.css" ></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="fa-solid fa-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="fa-solid fa-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="fa-solid fa-arrow-rotate-right"></i></div><div class="rightMenu-item" id="menu-home"><i class="fa-solid fa-house"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" href="/archives/"><i class="fa-solid fa-archive"></i><span>文章归档</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="fa-solid fa-folder-open"></i><span>文章分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="fa-solid fa-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuNormal"><div class="rightMenu-item" id="menu-translate"><i class="fa-solid fa-earth-asia"></i><span>繁简切换</span></div><div class="rightMenu-item" id="menu-darkmode"><i class="fa-solid fa-moon"></i><span>切换模式</span></div><div class="rightMenu-item" id="menu-print"><i class="fa-solid fa-print fa-fw"></i><span>打印页面</span></div></div></div><div id="rightmenu-mask"></div><div id="myscoll"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/algoliasearch/dist/algoliasearch-lite.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instantsearch.js/dist/instantsearch.production.min.js"></script><script src="/js/search/algolia.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo.mindcons.cn/',
+      region: '',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.mindcons.cn/',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><canvas id="universe"></canvas><script defer src="/custom/js/universe.js"></script><script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script><script defer data-pjax src="/custom/js/rightMenu.js"></script><script defer data-pjax src="/custom/js/cat.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><script>window.$crisp = [];
+window.CRISP_WEBSITE_ID = "717070d8-e449-4d60-b9b6-c1421478f42c";
+(function () {
+  d = document;
+  s = d.createElement("script");
+  s.src = "https://client.crisp.chat/l.js";
+  s.async = 1;
+  d.getElementsByTagName("head")[0].appendChild(s);
+})();
+$crisp.push(["safe", true])
+
+if (true) {
+  $crisp.push(["do", "chat:hide"])
+  $crisp.push(["on", "chat:closed", function() {
+    $crisp.push(["do", "chat:hide"])
+  }])
+  var chatBtnFn = () => {
+    var chatBtn = document.getElementById("chat_btn")
+    chatBtn.addEventListener("click", function(){
+      $crisp.push(["do", "chat:show"])
+      $crisp.push(["do", "chat:open"])
+
+    });
+  }
+  chatBtnFn()
+} else {
+  if (true) {
+    function chatBtnHide () {
+      $crisp.push(["do", "chat:hide"])
+    }
+    function chatBtnShow () {
+      $crisp.push(["do", "chat:show"])
+    }
+  }
+}</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

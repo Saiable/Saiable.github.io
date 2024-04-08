@@ -1,0 +1,639 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Excel基础与进阶 | 吕小布の博客</title><meta name="keywords" content="数据分析"><meta name="author" content="Sai"><meta name="copyright" content="Sai"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="引言 人的需求 &gt;&gt; 软件功能  数据场景  记录整理 数据计算 数据分析 数据展示  数据处理的挑战  数据太多 计算太累 需要价值和意义 需要协作  认识ExcelExcel版本   打开Excel  如何使用Win+R快捷键打开自定义程序)  设置菜单栏与功能区熟悉：菜单栏、功能区、功能区分组 可以自定义快速访问工具栏 可以自定义功能区，放自己常用的功能组 折叠功能区快捷键：Ct">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Excel基础与进阶">
+<meta property="og:url" content="https://mindcons.cn/2023/08/09/md/data/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/Excel/Excel%E5%9F%BA%E7%A1%80%E4%B8%8E%E8%BF%9B%E9%98%B6/index.html">
+<meta property="og:site_name" content="吕小布の博客">
+<meta property="og:description" content="引言 人的需求 &gt;&gt; 软件功能  数据场景  记录整理 数据计算 数据分析 数据展示  数据处理的挑战  数据太多 计算太累 需要价值和意义 需要协作  认识ExcelExcel版本   打开Excel  如何使用Win+R快捷键打开自定义程序)  设置菜单栏与功能区熟悉：菜单栏、功能区、功能区分组 可以自定义快速访问工具栏 可以自定义功能区，放自己常用的功能组 折叠功能区快捷键：Ct">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://bu.dusays.com/2023/02/10/63e583843360e.webp">
+<meta property="article:published_time" content="2023-08-09T01:03:02.000Z">
+<meta property="article:modified_time" content="2024-04-08T22:08:07.287Z">
+<meta property="article:author" content="Sai">
+<meta property="article:tag" content="数据分析">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://bu.dusays.com/2023/02/10/63e583843360e.webp"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://mindcons.cn/2023/08/09/md/data/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/Excel/Excel%E5%9F%BA%E7%A1%80%E4%B8%8E%E8%BF%9B%E9%98%B6/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"61301LMFP2","apiKey":"a7627d15f4af23df7fbc3e2922471858","indexName":"mindcons","hits":{"per_page":10},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":350},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: Sai","link":"链接: ","source":"来源: 吕小布の博客","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Excel基础与进阶',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-04-09 06:08:07'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/custom/css/custom.min.css"><meta name="generator" content="Hexo 6.2.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://bu.dusays.com/2023/02/10/63e583843360e.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">181</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">61</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">44</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fa-sharp fa-solid fa-photo-film"></i><span> 相册</span></a></li><li><a class="site-page child" href="/bangumis/"><i class="fa-fw fas fa-video"></i><span> 番剧</span></a></li><li><a class="site-page child" href="/booklist/"><i class="fa-fw fa-solid fa-book"></i><span> 书单</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/sponsorWall/"><i class="fa-fw fas fa-money-check-alt"></i><span> 赞助墙</span></a></div><div class="menus_item"><a class="site-page" href="/comment/"><i class="fa-fw fas fa-comments"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">吕小布の博客</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fa-sharp fa-solid fa-photo-film"></i><span> 相册</span></a></li><li><a class="site-page child" href="/bangumis/"><i class="fa-fw fas fa-video"></i><span> 番剧</span></a></li><li><a class="site-page child" href="/booklist/"><i class="fa-fw fa-solid fa-book"></i><span> 书单</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/sponsorWall/"><i class="fa-fw fas fa-money-check-alt"></i><span> 赞助墙</span></a></div><div class="menus_item"><a class="site-page" href="/comment/"><i class="fa-fw fas fa-comments"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Excel基础与进阶</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-08-09T01:03:02.000Z" title="发表于 2023-08-09 09:03:02">2023-08-09</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-04-08T22:08:07.287Z" title="更新于 2024-04-09 06:08:07">2024-04-09</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">数据分析</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Excel基础与进阶"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><blockquote>
+<p>人的需求 &gt;&gt; 软件功能</p>
+</blockquote>
+<p>数据场景</p>
+<ul>
+<li>记录整理</li>
+<li>数据计算</li>
+<li>数据分析</li>
+<li>数据展示</li>
+</ul>
+<p>数据处理的挑战</p>
+<ul>
+<li>数据太多</li>
+<li>计算太累</li>
+<li>需要价值和意义</li>
+<li>需要协作</li>
+</ul>
+<h1 id="认识Excel"><a href="#认识Excel" class="headerlink" title="认识Excel"></a>认识Excel</h1><h2 id="Excel版本"><a href="#Excel版本" class="headerlink" title="Excel版本"></a>Excel版本</h2><p><img src="/2023/08/09/md/data/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/Excel/Excel%E5%9F%BA%E7%A1%80%E4%B8%8E%E8%BF%9B%E9%98%B6/image-20240402171942053.png" alt="image-20240402171942053"></p>
+<p><img src="/2023/08/09/md/data/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/Excel/Excel%E5%9F%BA%E7%A1%80%E4%B8%8E%E8%BF%9B%E9%98%B6/image-20240402172010782.png" alt="image-20240402172010782"></p>
+<p><img src="/2023/08/09/md/data/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/Excel/Excel%E5%9F%BA%E7%A1%80%E4%B8%8E%E8%BF%9B%E9%98%B6/image-20240402172141838.png" alt="image-20240402172141838"></p>
+<h2 id="打开Excel"><a href="#打开Excel" class="headerlink" title="打开Excel"></a>打开Excel</h2><p><img src="/2023/08/09/md/data/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/Excel/Excel%E5%9F%BA%E7%A1%80%E4%B8%8E%E8%BF%9B%E9%98%B6/image-20240402172352533.png" alt="image-20240402172352533"></p>
+<p><img src="/2023/08/09/md/data/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/Excel/Excel%E5%9F%BA%E7%A1%80%E4%B8%8E%E8%BF%9B%E9%98%B6/image-20240402173537574.png" alt="image-20240402173537574"></p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/-lyl/p/RunAnything.html">如何使用Win+R快捷键打开自定义程序)</a></p>
+<p><img src="/2023/08/09/md/data/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/Excel/Excel%E5%9F%BA%E7%A1%80%E4%B8%8E%E8%BF%9B%E9%98%B6/image-20240402173620095.png" alt="image-20240402173620095"></p>
+<h2 id="设置菜单栏与功能区"><a href="#设置菜单栏与功能区" class="headerlink" title="设置菜单栏与功能区"></a>设置菜单栏与功能区</h2><p>熟悉：菜单栏、功能区、功能区分组</p>
+<p>可以自定义快速访问工具栏</p>
+<p>可以自定义功能区，放自己常用的功能组</p>
+<p>折叠功能区快捷键：<code>Ctrl + F1</code></p>
+<p>可以自定义背景和主题</p>
+<p>自定义新建工作表时的字体、sheet页数量等</p>
+<ul>
+<li>文件 - 选项 - 常规</li>
+</ul>
+<h2 id="保存"><a href="#保存" class="headerlink" title="保存"></a>保存</h2><p>保存：<code>Ctrl + S</code></p>
+<p>另存为：<code>F12</code></p>
+<p>保存格式默认为<code>xlsx</code>，如果要兼容低版本（97 - 2003），则保存为<code>xls</code></p>
+<p>设置密码，包括设置打开密码和修改密码，如果是后者，修改后只能另存为</p>
+<p>格式类型：常见的就是<code>xlsx</code>和<code>xls</code>，其他格式自行拓展。</p>
+<table>
+<thead>
+<tr>
+<th align="center">格式</th>
+<th align="center">扩展名</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Excel工作簿</td>
+<td align="center"><code>.xlsx</code></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Excel启用宏的工作簿</td>
+<td align="center"><code>.xlsm</code></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Excel二进制工作簿</td>
+<td align="center"><code>.xlsb</code></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">模板</td>
+<td align="center"><code>xltx</code></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">模板（代码）</td>
+<td align="center"><code>.xltm</code></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Excel 97 - Excel 2003工作簿</td>
+<td align="center"><code>.xls</code></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Excel 97 - Excel 2003模板</td>
+<td align="center"><code>.xlt</code></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Microsoft Excel 5.0 &#x2F; 95 工作簿</td>
+<td align="center"><code>.xls</code></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">XML电子表格 2003</td>
+<td align="center"><code>.xml</code></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">XML 数据</td>
+<td align="center"><code>.xml</code></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h2 id="数据录入规范"><a href="#数据录入规范" class="headerlink" title="数据录入规范"></a>数据录入规范</h2><p>横向录入，<strong>保证每一条数据都是完整的</strong></p>
+<h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><ul>
+<li><code>Tab</code>，光标选中后一个单元格</li>
+<li><code>Shift + Tab</code>，光标选中前一个单元格</li>
+<li><code>Enter</code>，光标选中下一个单元格</li>
+<li><code>Shift + Enter</code>，光标选中上一个单元格</li>
+<li><code>Tab + Enter</code>，回到下一行的首列</li>
+</ul>
+<h3 id="特殊格式"><a href="#特殊格式" class="headerlink" title="特殊格式"></a>特殊格式</h3><ul>
+<li><p>录入时间</p>
+<p>分隔符，用<code>-</code>或者<code>/</code>来分隔，才能被正确的识别为日期格式</p>
+<p>可以在开始菜单栏的数字格式中，调整日期的显示格式，如将默认的短日期（<code>/</code>分隔）调整为长日期（年月日的形式）</p>
+<p>快捷键：输入当前日期：<code>Ctrl + ;</code>，输入当前时间：<code>Ctrl + Shift + ;</code> 可以先输入日期，敲一个空格，再输入时间。也可以直接输入<code>=NOW()</code>函数</p>
+</li>
+<li><p>录入百分比</p>
+<p>先设置单元格格式，然后输入</p>
+<p>可以调整小数点后的数字</p>
+</li>
+<li><p>录入分数</p>
+<p>有两种形式，一个是小数点，如0.2，一个是分数，如<code>1/5</code>，第二种直接输入，会被认为是日期，需要输入个<code>0</code>加空格，再输入，就会被识别为分数</p>
+<p>也可以先设置单元格格式，再录入</p>
+</li>
+<li><p>录入长数据</p>
+<p>Excel数据录入的数据精度，只有15位；超过的位数编辑栏中会显示为0，显示栏会以科学计数法显示，输入<code>123456789012345678</code>，实际显示如下：</p>
+<p><img src="file:///data/data13/hh/desktop/md/data/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/Excel/Excel%E5%9F%BA%E7%A1%80%E4%B8%8E%E8%BF%9B%E9%98%B6/image-20231204160829518.png?lastModify=1712451143" alt="image-20231204160829518"></p>
+<p>类似身份证过长数据的录入，不能在数据格式下进行录入，而是要调整为<strong>文本格式</strong></p>
+<p><img src="file:///data/data13/hh/desktop/md/data/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/Excel/Excel%E5%9F%BA%E7%A1%80%E4%B8%8E%E8%BF%9B%E9%98%B6/image-20231204161158910.png?lastModify=1712451143" alt="image-20231204161158910"></p>
+<p>文本型数字的单元格左上角，会有一个绿色的小三角，代表着这是一个文本型数字</p>
+<p>缺点：无法计算</p>
+<p>有点：可以完整的记录长数字</p>
+<p>小技巧：如果先输入了数字，但忘记调整单元格格式为文本了，可以在数字开始，输入英文下的的单引号，也可以转换成文本格式。</p>
+</li>
+<li><p>原位填充：输入数据后，按回车，光标会跳转到下一行的单元格，可以使用<code>Ctrl + Enter</code>，使得光标停留在原来的单元格。另外一个应用场景是，选中多个单元格后，输入，再<code>Ctrl + Enter</code>，可以全部填充</p>
+</li>
+</ul>
+<h3 id="数据验证"><a href="#数据验证" class="headerlink" title="数据验证"></a>数据验证</h3><blockquote>
+<p>数据 - 数据工具 - 数据验证</p>
+</blockquote>
+<p>设置提示</p>
+<p>可以对输入值做一些格式上的限定</p>
+<p><img src="/2023/08/09/md/data/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/Excel/Excel%E5%9F%BA%E7%A1%80%E4%B8%8E%E8%BF%9B%E9%98%B6/image-20240408145022176.png" alt="image-20240408145022176"></p>
+<p>设置序列（列表）</p>
+<p>可以在指定的几个值里，进行选择</p>
+<p><img src="/2023/08/09/md/data/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/Excel/Excel%E5%9F%BA%E7%A1%80%E4%B8%8E%E8%BF%9B%E9%98%B6/image-20240408150355208.png" alt="image-20240408150355208"></p>
+<p>设置出错警告</p>
+<p>比如身份证是18位，当输入的长度错误时，可以弹窗提示</p>
+<h2 id="单元格"><a href="#单元格" class="headerlink" title="单元格"></a>单元格</h2><h3 id="单元格内容"><a href="#单元格内容" class="headerlink" title="单元格内容"></a>单元格内容</h3><p>在单元格内填充的内容，可以分为以下三种基本数据类型</p>
+<ul>
+<li><p>文本：默认左对齐，文本不可参与计算</p>
+</li>
+<li><p>数值：默认右对齐，数值计算精度为15位</p>
+</li>
+<li><p>逻辑值：默认居中对齐，<code>True</code>和<code>False</code>既能用来判断，也能参与计算</p>
+<p><img src="/2023/08/09/md/data/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/Excel/Excel%E5%9F%BA%E7%A1%80%E4%B8%8E%E8%BF%9B%E9%98%B6/image-20231205142120649.png" alt="image-20231205142120649"></p>
+</li>
+</ul>
+<p>直接全选 - 删除，是不会清除掉单元格内容的格式的，需要点击<code>清除格式</code>选项卡</p>
+<h3 id="单元格格式"><a href="#单元格格式" class="headerlink" title="单元格格式"></a>单元格格式</h3><p>快捷键是<code>Ctrl + 1</code></p>
+<p><strong>单元格常规格式</strong></p>
+<blockquote>
+<p>就是设置字体，对齐方式等</p>
+</blockquote>
+<ul>
+<li>对齐</li>
+<li>字体</li>
+<li>边框</li>
+<li>填充</li>
+</ul>
+<p>人们常混淆的<code>边框</code>和<code>网格线</code>。网格线只是辅助查看的一个功能，打印是不显示的；可以在<code>视图</code>选项卡中调用它</p>
+<p><strong>单元格数字格式</strong></p>
+<ul>
+<li>常规格式，多数情况下，设置为“常规”格式的数字，即以键入的方式显示，但Excel可能不会对按你的预期对这些数字进行格式设置</li>
+<li>文本格式，将单元格内的内容视为文本，并在键入时准确显示内容，即使键入数字也是如此</li>
+<li>日期格式，Excel可将日期存储为序列号，以便可以在计算中使用它们。默认情况下，1900年1月1日为序列号1</li>
+<li>自定义数字格式，以现有格式为基础，生成的自定义数字格式</li>
+</ul>
+<p><img src="/2023/08/09/md/data/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/Excel/Excel%E5%9F%BA%E7%A1%80%E4%B8%8E%E8%BF%9B%E9%98%B6/image-20231205143114341.png" alt="image-20231205143114341"></p>
+<h1 id="数据收集"><a href="#数据收集" class="headerlink" title="数据收集"></a>数据收集</h1><blockquote>
+<p>注意，是收集，不是采集。</p>
+<p>场景是让各部门或者各团队，填写某些固定模板的数据内容</p>
+</blockquote>
+<h2 id="本地"><a href="#本地" class="headerlink" title="本地"></a>本地</h2><blockquote>
+<p>只能本地Excel传递的话，一般来说会先做好Excel表头，再填写一条记录作为模板，让填写人参考</p>
+</blockquote>
+<p>优化项：</p>
+<ul>
+<li>增加输入提示，<code>数据 - 数据验证</code>或者是<code>数据 - 有效性</code></li>
+<li>设置数据验证出错警告，如身份证号会少填写，可以设置警告</li>
+<li>下拉列表，当存在有限的可选值时，可以使用下拉列表，而不是手动输入；也是在<code>数据</code>菜单栏</li>
+</ul>
+<h2 id="数据合并"><a href="#数据合并" class="headerlink" title="数据合并"></a>数据合并</h2><blockquote>
+<p>数据 - 新建查询 - 从文件 -从文件夹</p>
+<p>版本：Office 2016 +</p>
+</blockquote>
+<p>收到了不同人员或者部门填写的数据后，我们会收到10多个甚至几十个文件，可以使用数据查询，将统一模板的内容，导入到新表中（而不是一个个复制粘贴）</p>
+<p>注意：如果存在文件加密，则导入不了</p>
+<p>如果能用协作工具，最好用</p>
+<h2 id="协作工具"><a href="#协作工具" class="headerlink" title="协作工具"></a>协作工具</h2><blockquote>
+<p>如果可以连通外网，可以使用多人协作工具：如飞书等</p>
+</blockquote>
+<h3 id="共享文档内容"><a href="#共享文档内容" class="headerlink" title="共享文档内容"></a>共享文档内容</h3><blockquote>
+<p>文档加密</p>
+<p>限制编辑</p>
+<p>数据验证</p>
+</blockquote>
+<h3 id="协作办公"><a href="#协作办公" class="headerlink" title="协作办公"></a>协作办公</h3><h2 id="收集网络数据"><a href="#收集网络数据" class="headerlink" title="收集网络数据"></a>收集网络数据</h2><blockquote>
+<p>类似爬虫，只能做简单需求的表格类数据，非结构化数据无法处理</p>
+<p>数据 - 获取数据 - 自网站</p>
+<p>Office 2016，名称为新建查询</p>
+<p>Office 2019，名称为获取数据 </p>
+</blockquote>
+<ul>
+<li>从url中获取单页数据：<a target="_blank" rel="noopener" href="https://movie.douban.com/coming">https://movie.douban.com/coming</a></li>
+<li>实时获取数据：<a target="_blank" rel="noopener" href="https://q.10jqka.com.cn/">https://q.10jqka.com.cn/</a><ul>
+<li>设置自动更新</li>
+<li>设置打开文件时更新数据</li>
+</ul>
+</li>
+<li>如果想对收集的数据，进行二次修改，请跳转<code>数据清洗</code>小节</li>
+</ul>
+<h1 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h1><blockquote>
+<p>包含数据录入、预处理、后处理、数据清洗</p>
+</blockquote>
+<h2 id="快速填充"><a href="#快速填充" class="headerlink" title="快速填充"></a>快速填充</h2><blockquote>
+<p>也称之为智能填充</p>
+</blockquote>
+<ul>
+<li><p>快速填充，<code>Ctrl + E</code>；或者双击填充柄（单元格的右下角↘），然后选择快速填充</p>
+</li>
+<li><p>案例：适用相同格式的数据列，取同一位置的部分数据</p>
+<table>
+<thead>
+<tr>
+<th>邮箱</th>
+<th>人名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="mailto:john.doe@email.com">john.doe@email.com</a></td>
+<td>john.doe</td>
+</tr>
+<tr>
+<td><a href="mailto:emily.jones94@gmail.com">emily.jones94@gmail.com</a></td>
+<td>emily.jones94</td>
+</tr>
+<tr>
+<td><a href="mailto:sam.wilson@emailprovider.com">sam.wilson@emailprovider.com</a></td>
+<td>sam.wilson</td>
+</tr>
+<tr>
+<td><a href="mailto:lisa.brown@emailhosting.com">lisa.brown@emailhosting.com</a></td>
+<td>lisa.brown</td>
+</tr>
+<tr>
+<td><a href="mailto:robert.jenkins@emailservice.com">robert.jenkins@emailservice.com</a></td>
+<td>robert.jenkins</td>
+</tr>
+<tr>
+<td><a href="mailto:amy.chang@emailserver.com">amy.chang@emailserver.com</a></td>
+<td>amy.chang</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>场景</p>
+<p><strong>提取内容</strong>，将括号中的规格提取为新一列：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">双汇火腿肠（5元*1根）</span><br><span class="line">康师傅方便面（3元*2包）</span><br><span class="line">哇哈哈矿泉水（2元*3瓶）</span><br><span class="line">维达抽纸（8元*1包）</span><br><span class="line">蒙牛纯牛奶（10元*2瓶）</span><br><span class="line">可口可乐汽水（4元*4听）</span><br><span class="line">光明酸奶（6元*3瓶）</span><br><span class="line">乐事薯片（7元*2包）</span><br><span class="line">红富士苹果（1元*5个）</span><br><span class="line">雀巢咖啡（12元*1罐）</span><br></pre></td></tr></table></figure>
+
+<p><strong>拆分后重组合并</strong>，新增一列，为姓氏加职位，样例：王部长：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">王宇  部长</span><br><span class="line">张美华 总经理</span><br><span class="line">赵子龙 主任</span><br><span class="line">刘文斌 部长</span><br><span class="line">郑小娟 副主席</span><br><span class="line">孙鑫  总监</span><br><span class="line">吴艳红 主管</span><br><span class="line">陈阳  经理</span><br><span class="line">周明  领导</span><br><span class="line">刘伟  总裁</span><br></pre></td></tr></table></figure>
+
+<p><strong>数据拆分</strong>，将人名和手机号拆分成两列：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">小丽 18438762553</span><br><span class="line">张伟 13987654321</span><br><span class="line">王芳 18765432109</span><br><span class="line">李雷 13659874213</span><br><span class="line">赵敏 18098765432</span><br><span class="line">刘洋 15012345678</span><br><span class="line">范冰 13567890123</span><br><span class="line">吴华 18234567890</span><br><span class="line">周婷 13345678901</span><br><span class="line">徐飞 18901234567</span><br></pre></td></tr></table></figure>
+
+<p>案例：提取身份证号后4位，以及出生日期</p>
+<blockquote>
+<p>注意数字格式中，0的处理</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">马勇涌—-332529198509040019</span><br><span class="line">姚瑶—-440102198609040026</span><br><span class="line">张军—-230227197004220015</span><br><span class="line">刘胜—-370882198903184217</span><br><span class="line">许磊—-320283198612130977</span><br><span class="line">杨宇—-120221199003230014</span><br><span class="line">王必忠—-330226198911237031</span><br><span class="line">王正中—-370911199407226013</span><br><span class="line">杨玉霞—-230226195701150045</span><br><span class="line">周文君—-320106198410290421</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>注意点</p>
+<p>如果快速填充操作报错，或者结果明显不对，确保要处理的数据列，中间没有完全空列的情况。要保证处理的二维表是一个整体</p>
+</li>
+</ul>
+<h3 id="填充"><a href="#填充" class="headerlink" title="填充"></a>填充</h3><p>- </p>
+<h4 id=""><a href="#" class="headerlink" title=""></a></h4><h2 id="替换"><a href="#替换" class="headerlink" title="替换"></a>替换</h2><h2 id="调整顺序"><a href="#调整顺序" class="headerlink" title="调整顺序"></a>调整顺序</h2><h2 id="合并拆分"><a href="#合并拆分" class="headerlink" title="合并拆分"></a>合并拆分</h2><h2 id="记录操作步骤"><a href="#记录操作步骤" class="headerlink" title="记录操作步骤"></a>记录操作步骤</h2><h2 id="数据清洗"><a href="#数据清洗" class="headerlink" title="数据清洗"></a>数据清洗</h2><p>导读：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/338513987">这篇文章把数据讲透了（三）：数据清洗 - 知乎 (zhihu.com)</a></li>
+</ul>
+<blockquote>
+<p>如果数据源来源于网络，不能直接在源数据上修改</p>
+<ul>
+<li>普通区域创建表快捷键，<code>Ctrl + T</code></li>
+</ul>
+<p>基本流程：</p>
+<ul>
+<li>检查原表：检查是否存在数据缺失&#x2F;异常值&#x2F;不规范的情况</li>
+<li>确认问题：和业务团队确认是否有收集信息的疏漏</li>
+<li>清洗数据：评估决定如何进行处理</li>
+</ul>
+</blockquote>
+<p><code>查询 - 编辑</code>（wps中是没有power query功能的）</p>
+<h2 id="数据透视表"><a href="#数据透视表" class="headerlink" title="数据透视表"></a>数据透视表</h2><p>其中<code>PowerQuery</code>就是<code>PowerBI</code></p>
+<h2 id="VBA"><a href="#VBA" class="headerlink" title="VBA"></a>VBA</h2><blockquote>
+<p>可以用python替代，用到时直接学就好</p>
+</blockquote>
+<p>- </p>
+<h1 id="数据存储"><a href="#数据存储" class="headerlink" title="数据存储"></a>数据存储</h1><h2 id="数据存储的层次"><a href="#数据存储的层次" class="headerlink" title="数据存储的层次"></a>数据存储的层次</h2><h1 id="数据查询"><a href="#数据查询" class="headerlink" title="数据查询"></a>数据查询</h1><h2 id="数据展示"><a href="#数据展示" class="headerlink" title="数据展示"></a>数据展示</h2><blockquote>
+<p>排序与自定义排序</p>
+<p>自定义筛选和高级筛选</p>
+</blockquote>
+<h1 id="数据运算"><a href="#数据运算" class="headerlink" title="数据运算"></a>数据运算</h1><blockquote>
+<p>公式和函数</p>
+</blockquote>
+<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><h3 id="汇总统计"><a href="#汇总统计" class="headerlink" title="汇总统计"></a>汇总统计</h3><h3 id="文本处理"><a href="#文本处理" class="headerlink" title="文本处理"></a>文本处理</h3><h3 id="时间计算"><a href="#时间计算" class="headerlink" title="时间计算"></a>时间计算</h3><h3 id="查找与匹配"><a href="#查找与匹配" class="headerlink" title="查找与匹配"></a>查找与匹配</h3><h1 id="数据可视化分析"><a href="#数据可视化分析" class="headerlink" title="数据可视化分析"></a>数据可视化分析</h1><blockquote>
+<p>包含数据可视化、数据分析</p>
+</blockquote>
+<h2 id="快速分析"><a href="#快速分析" class="headerlink" title="快速分析"></a>快速分析</h2><blockquote>
+<p>快捷的对数据进行一个简单的可视化</p>
+</blockquote>
+<p>快捷键：<code>Ctrl + Q</code></p>
+<p>功能：</p>
+<ul>
+<li>格式化，以下都是<code>条件格式</code>里的内容：开始 - 样式 - 条件格式<ul>
+<li>数据条</li>
+<li>色阶</li>
+<li>图标集</li>
+<li>大于</li>
+<li>文本包含</li>
+<li>清除格式</li>
+</ul>
+</li>
+<li>图表</li>
+<li>汇总</li>
+<li>表格</li>
+<li>迷你图<ul>
+<li>在<code>插入</code>选项卡中</li>
+</ul>
+</li>
+</ul>
+<h2 id="条件格式"><a href="#条件格式" class="headerlink" title="条件格式"></a>条件格式</h2><blockquote>
+<p>开始 - 样式 - 条件格式</p>
+<p>根据不同的条件，显示不同的格式。支持自定义</p>
+</blockquote>
+<p>如下都是一体两面的东西</p>
+<ul>
+<li><p>数据条</p>
+</li>
+<li><p>色阶</p>
+</li>
+<li><p>图标集</p>
+</li>
+<li><p>上下型</p>
+<ul>
+<li><p>对首尾的选取，以及平均值的比较。支持百分比</p>
+<p><img src="/2023/08/09/md/data/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/Excel/Excel%E5%9F%BA%E7%A1%80%E4%B8%8E%E8%BF%9B%E9%98%B6/image-20240408111121208.png" alt="image-20240408111121208"></p>
+</li>
+</ul>
+</li>
+<li><p>文本包含</p>
+</li>
+<li><p>公式</p>
+<ul>
+<li><p>自定义公式，结果为真时，则显示格式</p>
+<p><img src="/2023/08/09/md/data/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/Excel/Excel%E5%9F%BA%E7%A1%80%E4%B8%8E%E8%BF%9B%E9%98%B6/image-20240408111319142.png" alt="image-20240408111319142"></p>
+</li>
+</ul>
+</li>
+</ul>
+<p>可以管理规则，自定义<code>条件</code>来设置<code>格式</code></p>
+<h2 id="图表"><a href="#图表" class="headerlink" title="图表"></a>图表</h2><blockquote>
+<p>插入 - 图表</p>
+</blockquote>
+<h2 id="汇总"><a href="#汇总" class="headerlink" title="汇总"></a>汇总</h2><h2 id="迷你图"><a href="#迷你图" class="headerlink" title="迷你图"></a>迷你图</h2><blockquote>
+<p> 插入 - 迷你图</p>
+</blockquote>
+<h1 id="数据挖掘"><a href="#数据挖掘" class="headerlink" title="数据挖掘"></a>数据挖掘</h1><h1 id="数据建模"><a href="#数据建模" class="headerlink" title="数据建模"></a>数据建模</h1></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a target="_blank" rel="noopener" href="https://github.com/Saiable">Sai</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://mindcons.cn/2023/08/09/md/data/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/Excel/Excel%E5%9F%BA%E7%A1%80%E4%B8%8E%E8%BF%9B%E9%98%B6/">https://mindcons.cn/2023/08/09/md/data/软件使用/Excel/Excel基础与进阶/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://mindcons.cn" target="_blank">吕小布の博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">数据分析</a></div><div class="post_share"><div class="social-share" data-image="https://bu.dusays.com/2023/02/10/63e583843360e.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://bu.dusays.com/2023/02/10/63e580229ee01.webp" target="_blank"><img class="post-qr-code-img" src="https://bu.dusays.com/2023/02/10/63e580229ee01.webp" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://bu.dusays.com/2023/02/09/63e48775d4f42.webp" target="_blank"><img class="post-qr-code-img" src="https://bu.dusays.com/2023/02/09/63e48775d4f42.webp" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/08/09/md/data/database/postgres/postgres%E5%9F%BA%E7%A1%80/"><img class="prev-cover" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">postgres基础</div></div></a></div><div class="next-post pull-right"><a href="/2023/07/13/md/python/django/django%E5%BA%94%E7%94%A8/"><img class="next-cover" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">django应用</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://bu.dusays.com/2023/02/10/63e583843360e.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Sai</div><div class="author-info__description">天可补,海可填,南山可移。日月既往,不可复追。</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">181</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">61</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">44</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Saiable"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://bu.dusays.com/2023/02/10/63e57e822f198.webp" target="_blank" title="QQ"><i class="fa-brands fa-qq"></i></a><a class="social-icon" href="https://bu.dusays.com/2023/02/10/63e57f8ac9fae.webp" target="_blank" title="WeChat"><i class="fa-brands fa-weixin"></i></a><a class="social-icon" href="https://github.com/Saiable" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:mindcons@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">日月既往,不可复追。</div></div><div class="xpand" style="height:200px;"><canvas class="illo" width="800" height="800" style="max-width: 200px; max-height: 200px; touch-action: none; width: 640px; height: 640px;"></canvas></div><script src="https://npm.elemecdn.com/ethan4116-blog/lib/js/other/two-people/twopeople1.js"></script><script src="https://npm.elemecdn.com/ethan4116-blog/lib/js/other/two-people/zdog.dist.js"></script><script id="rendered-js" src="https://npm.elemecdn.com/ethan4116-blog/lib/js/other/two-people/twopeople.js"></script><style>.card-widget.card-announcement {
+margin: 0;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+canvas {
+display: block;
+margin: 0 auto;
+cursor: move;
+}</style><div class="card-widget tzy-right-widget" id="card-wechat"><div id="flip-wrapper"><div id="flip-content"><div class="face"></div><div class="back face"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%95%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">引言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AE%A4%E8%AF%86Excel"><span class="toc-number">2.</span> <span class="toc-text">认识Excel</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Excel%E7%89%88%E6%9C%AC"><span class="toc-number">2.1.</span> <span class="toc-text">Excel版本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%93%E5%BC%80Excel"><span class="toc-number">2.2.</span> <span class="toc-text">打开Excel</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E8%8F%9C%E5%8D%95%E6%A0%8F%E4%B8%8E%E5%8A%9F%E8%83%BD%E5%8C%BA"><span class="toc-number">2.3.</span> <span class="toc-text">设置菜单栏与功能区</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%9D%E5%AD%98"><span class="toc-number">2.4.</span> <span class="toc-text">保存</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BD%95%E5%85%A5%E8%A7%84%E8%8C%83"><span class="toc-number">2.5.</span> <span class="toc-text">数据录入规范</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="toc-number">2.5.1.</span> <span class="toc-text">快捷键</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E6%A0%BC%E5%BC%8F"><span class="toc-number">2.5.2.</span> <span class="toc-text">特殊格式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E9%AA%8C%E8%AF%81"><span class="toc-number">2.5.3.</span> <span class="toc-text">数据验证</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E5%85%83%E6%A0%BC"><span class="toc-number">2.6.</span> <span class="toc-text">单元格</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%95%E5%85%83%E6%A0%BC%E5%86%85%E5%AE%B9"><span class="toc-number">2.6.1.</span> <span class="toc-text">单元格内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%95%E5%85%83%E6%A0%BC%E6%A0%BC%E5%BC%8F"><span class="toc-number">2.6.2.</span> <span class="toc-text">单元格格式</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86"><span class="toc-number">3.</span> <span class="toc-text">数据收集</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0"><span class="toc-number">3.1.</span> <span class="toc-text">本地</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%90%88%E5%B9%B6"><span class="toc-number">3.2.</span> <span class="toc-text">数据合并</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%8F%E4%BD%9C%E5%B7%A5%E5%85%B7"><span class="toc-number">3.3.</span> <span class="toc-text">协作工具</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B1%E4%BA%AB%E6%96%87%E6%A1%A3%E5%86%85%E5%AE%B9"><span class="toc-number">3.3.1.</span> <span class="toc-text">共享文档内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%8F%E4%BD%9C%E5%8A%9E%E5%85%AC"><span class="toc-number">3.3.2.</span> <span class="toc-text">协作办公</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%94%B6%E9%9B%86%E7%BD%91%E7%BB%9C%E6%95%B0%E6%8D%AE"><span class="toc-number">3.4.</span> <span class="toc-text">收集网络数据</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86"><span class="toc-number">4.</span> <span class="toc-text">数据处理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%AB%E9%80%9F%E5%A1%AB%E5%85%85"><span class="toc-number">4.1.</span> <span class="toc-text">快速填充</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A1%AB%E5%85%85"><span class="toc-number">4.1.1.</span> <span class="toc-text">填充</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link"><span class="toc-number">4.1.1.1.</span> <span class="toc-text"></span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%BF%E6%8D%A2"><span class="toc-number">4.2.</span> <span class="toc-text">替换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B0%83%E6%95%B4%E9%A1%BA%E5%BA%8F"><span class="toc-number">4.3.</span> <span class="toc-text">调整顺序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%88%E5%B9%B6%E6%8B%86%E5%88%86"><span class="toc-number">4.4.</span> <span class="toc-text">合并拆分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%B0%E5%BD%95%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4"><span class="toc-number">4.5.</span> <span class="toc-text">记录操作步骤</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E6%B8%85%E6%B4%97"><span class="toc-number">4.6.</span> <span class="toc-text">数据清洗</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E9%80%8F%E8%A7%86%E8%A1%A8"><span class="toc-number">4.7.</span> <span class="toc-text">数据透视表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#VBA"><span class="toc-number">4.8.</span> <span class="toc-text">VBA</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8"><span class="toc-number">5.</span> <span class="toc-text">数据存储</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E7%9A%84%E5%B1%82%E6%AC%A1"><span class="toc-number">5.1.</span> <span class="toc-text">数据存储的层次</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2"><span class="toc-number">6.</span> <span class="toc-text">数据查询</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%B1%95%E7%A4%BA"><span class="toc-number">6.1.</span> <span class="toc-text">数据展示</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E8%BF%90%E7%AE%97"><span class="toc-number">7.</span> <span class="toc-text">数据运算</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%BD%E6%95%B0"><span class="toc-number">7.1.</span> <span class="toc-text">函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B1%87%E6%80%BB%E7%BB%9F%E8%AE%A1"><span class="toc-number">7.1.1.</span> <span class="toc-text">汇总统计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86"><span class="toc-number">7.1.2.</span> <span class="toc-text">文本处理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%B6%E9%97%B4%E8%AE%A1%E7%AE%97"><span class="toc-number">7.1.3.</span> <span class="toc-text">时间计算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E6%89%BE%E4%B8%8E%E5%8C%B9%E9%85%8D"><span class="toc-number">7.1.4.</span> <span class="toc-text">查找与匹配</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%88%86%E6%9E%90"><span class="toc-number">8.</span> <span class="toc-text">数据可视化分析</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%AB%E9%80%9F%E5%88%86%E6%9E%90"><span class="toc-number">8.1.</span> <span class="toc-text">快速分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9D%A1%E4%BB%B6%E6%A0%BC%E5%BC%8F"><span class="toc-number">8.2.</span> <span class="toc-text">条件格式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%BE%E8%A1%A8"><span class="toc-number">8.3.</span> <span class="toc-text">图表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B1%87%E6%80%BB"><span class="toc-number">8.4.</span> <span class="toc-text">汇总</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%B7%E4%BD%A0%E5%9B%BE"><span class="toc-number">8.5.</span> <span class="toc-text">迷你图</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98"><span class="toc-number">9.</span> <span class="toc-text">数据挖掘</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BB%BA%E6%A8%A1"><span class="toc-number">10.</span> <span class="toc-text">数据建模</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/04/05/md/life/%E6%8A%A4%E8%82%A4%E6%B2%BB%E7%97%98%E7%B3%BB%E5%88%97/" title="护肤治痘系列">护肤治痘系列</a><time datetime="2024-04-05T10:48:52.636Z" title="发表于 2024-04-05 18:48:52">2024-04-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/04/05/md/data/%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4/" title="无题"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2024/04/05/md/data/%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4/" title="无题">无题</a><time datetime="2024-04-05T10:48:52.357Z" title="发表于 2024-04-05 18:48:52">2024-04-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/04/05/md/data/%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8/ppocrlabel%E5%AE%89%E8%A3%85/" title="ppocrlabel安装及使用">ppocrlabel安装及使用</a><time datetime="2024-04-05T10:48:52.340Z" title="发表于 2024-04-05 18:48:52">2024-04-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/12/01/md/data/%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8/labelStudio%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/" title="labelStudio安装及使用">labelStudio安装及使用</a><time datetime="2023-11-30T22:12:44.739Z" title="发表于 2023-12-01 06:12:44">2023-12-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/12/01/md/data/%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8/brat%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4/" title="brat安装步骤及注意事项">brat安装步骤及注意事项</a><time datetime="2023-11-30T22:12:44.726Z" title="发表于 2023-12-01 06:12:44">2023-12-01</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://bu.dusays.com/2023/02/10/63e57cef87293.webp')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 <i id="heartbeat" class="fa fas fa-heartbeat"></i> Sai</div><a href="https://icp.gov.moe/?keyword=20230203" target="_blank">萌ICP备20230203号</a><div class="footer_custom_text"><p><a target="_blank" href="https://hexo.io/"><img src="https://bu.dusays.com/2023/02/09/63e488a78b827.webp" title="博客框架为Hexo"></a>&nbsp;<a target="_blank" href="https://butterfly.js.org/"><img src="https://bu.dusays.com/2023/02/10/63e57f321880a.webp" title="主题采用butterfly"></a></p></div></div><link rel="stylesheet" href="/custom/css/heartbeat.min.css" ></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="fa-solid fa-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="fa-solid fa-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="fa-solid fa-arrow-rotate-right"></i></div><div class="rightMenu-item" id="menu-home"><i class="fa-solid fa-house"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" href="/archives/"><i class="fa-solid fa-archive"></i><span>文章归档</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="fa-solid fa-folder-open"></i><span>文章分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="fa-solid fa-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuNormal"><div class="rightMenu-item" id="menu-translate"><i class="fa-solid fa-earth-asia"></i><span>繁简切换</span></div><div class="rightMenu-item" id="menu-darkmode"><i class="fa-solid fa-moon"></i><span>切换模式</span></div><div class="rightMenu-item" id="menu-print"><i class="fa-solid fa-print fa-fw"></i><span>打印页面</span></div></div></div><div id="rightmenu-mask"></div><div id="myscoll"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/algoliasearch/dist/algoliasearch-lite.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instantsearch.js/dist/instantsearch.production.min.js"></script><script src="/js/search/algolia.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo.mindcons.cn/',
+      region: '',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.mindcons.cn/',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><canvas id="universe"></canvas><script defer src="/custom/js/universe.js"></script><script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script><script defer data-pjax src="/custom/js/rightMenu.js"></script><script defer data-pjax src="/custom/js/cat.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><script>window.$crisp = [];
+window.CRISP_WEBSITE_ID = "717070d8-e449-4d60-b9b6-c1421478f42c";
+(function () {
+  d = document;
+  s = d.createElement("script");
+  s.src = "https://client.crisp.chat/l.js";
+  s.async = 1;
+  d.getElementsByTagName("head")[0].appendChild(s);
+})();
+$crisp.push(["safe", true])
+
+if (true) {
+  $crisp.push(["do", "chat:hide"])
+  $crisp.push(["on", "chat:closed", function() {
+    $crisp.push(["do", "chat:hide"])
+  }])
+  var chatBtnFn = () => {
+    var chatBtn = document.getElementById("chat_btn")
+    chatBtn.addEventListener("click", function(){
+      $crisp.push(["do", "chat:show"])
+      $crisp.push(["do", "chat:open"])
+
+    });
+  }
+  chatBtnFn()
+} else {
+  if (true) {
+    function chatBtnHide () {
+      $crisp.push(["do", "chat:hide"])
+    }
+    function chatBtnShow () {
+      $crisp.push(["do", "chat:show"])
+    }
+  }
+}</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
