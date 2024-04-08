@@ -1,13 +1,12 @@
 ---
-title: Promise的使用与实现
+title: 'Promise的使用与实现'
+date: 2022-8-8 07:15:24
 cover: false
 toc_number: false
 tags:
-  - javascript
-categories: javascript
+- javascript
+categories: 'javascript'
 typora-root-url: Promise
-abbrlink: 60794
-date: 2022-08-08 07:15:24
 ---
 [TOC]
 

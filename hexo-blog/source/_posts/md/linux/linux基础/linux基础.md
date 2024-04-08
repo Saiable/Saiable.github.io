@@ -1,8 +1,7 @@
 ---
-title: linux基础
+title: 'linux基础'
+date: 2022-8-9 09:03:02
 cover: false
-abbrlink: 34982
-date: 2022-08-09 09:03:02
 ---
 
 

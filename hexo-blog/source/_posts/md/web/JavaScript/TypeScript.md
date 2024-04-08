@@ -1,12 +1,11 @@
 ---
-title: TypeScript基础
+title: 'TypeScript基础'
 cover: false
+date: 2022-7-19 19:38:20
 tags:
   - TypeScript
 typora-root-url: TypeScript
 description: typescript基础
-abbrlink: 61299
-date: 2022-07-19 19:38:20
 ---
 
 

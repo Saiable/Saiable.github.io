@@ -1,11 +1,10 @@
 ---
-title: Vue组件库封装
+title: 'Vue组件库封装'
+date: 2022-11-20 20:30:40
 cover: false
 tags:
-  - 组件库
-categories: 组件库
-abbrlink: 8382
-date: 2022-11-20 20:30:40
+- 组件库
+categories: '组件库'
 ---
 
 

@@ -1,8 +1,7 @@
 ---
-title: windows系统下常见的bat命令
-date: '2022/7/8 07:15:24'
+title: 'windows系统下常见的bat命令'
+date: 2022/7/8 07:15:24
 cover: false
-abbrlink: 29071
 ---
 
 # `bat`语法快速入门

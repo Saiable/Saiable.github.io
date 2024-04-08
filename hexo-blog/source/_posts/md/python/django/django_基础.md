@@ -1,7 +1,13 @@
 ---
-abbrlink: 2
+title: 'django基础'
+date: 2022-8-9 09:03:02
+cover: false
+tags:
+- django
+categories: django
 ---
-[TOC]
+
+
 
 # 1.web应用程序
 

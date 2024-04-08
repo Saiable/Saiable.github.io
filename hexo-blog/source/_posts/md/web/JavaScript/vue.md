@@ -1,8 +1,7 @@
 ---
-title: vue基础教程01
-date: '2022/6/25 20:36:03'
+title: 'vue基础教程01'
+date: 2022/6/25 20:36:03
 cover: false
-abbrlink: 42866
 ---
 
 

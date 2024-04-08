@@ -1,13 +1,12 @@
 ---
-title: Vue2基本使用
+title: 'Vue2基本使用'
+date: 2022-7-25 20:30:40
 cover: false
 toc_number: false
 tags:
-  - Vue2
+- Vue2
 categories: Vue
 typora-root-url: Vue2基本使用
-abbrlink: 34891
-date: 2022-07-25 20:30:40
 ---
 
 

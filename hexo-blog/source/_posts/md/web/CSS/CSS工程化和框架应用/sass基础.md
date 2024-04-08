@@ -1,12 +1,11 @@
 ---
-title: Sass基础
+title: 'Sass基础'
+date: 2022-8-9 07:28:42
 cover: false
 tags:
-  - CSS预处理器
+- CSS预处理器
 categories: CSS预处理器
 typora-root-url: sass基础
-abbrlink: 7228
-date: 2022-08-09 07:28:42
 ---
 
 [Sass常见问题 | Sass中文网](https://www.sass.hk/faq/)

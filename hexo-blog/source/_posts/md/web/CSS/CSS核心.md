@@ -1,12 +1,11 @@
 ---
-title: CSS核心基础
+title: 'CSS核心基础'
+date: 2022-8-9 07:28:42
 cover: false
 tags:
-  - CSS
-categories: CSS
+- CSS
+categories: 'CSS'
 typora-root-url: CSS核心
-abbrlink: 42747
-date: 2022-08-09 07:28:42
 ---
 
 

@@ -1,12 +1,11 @@
 ---
-title: CSS代码规范
+title: 'CSS代码规范'
+date: 2022-8-20 14:28:42
 cover: false
 tags:
-  - CSS
-categories: CSS
+- CSS
+categories: 'CSS'
 typora-root-url: CSS代码规范
-abbrlink: 31672
-date: 2022-08-20 14:28:42
 ---
 
 

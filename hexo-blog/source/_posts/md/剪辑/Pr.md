@@ -1,11 +1,10 @@
 ---
-title: Pr
+title: 'Pr'
+date: 2022-4-11 09:03:02
 cover: false
 tags:
-  - Adobe
+- Adobe
 categories: Adobe
-abbrlink: 9660
-date: 2022-04-11 09:03:02
 ---
 
 # 设置

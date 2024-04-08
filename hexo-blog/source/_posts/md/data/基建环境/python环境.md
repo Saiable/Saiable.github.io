@@ -1,12 +1,11 @@
 ---
-title: python环境
+title: 'python环境'
+date: 2023-02-16 09:03:02
 cover: false
 tags:
-  - python
+- python
 categories: python
 typora-root-url: python环境
-abbrlink: 23287
-date: 2023-02-16 09:03:02
 ---
 
 # windows安装python3

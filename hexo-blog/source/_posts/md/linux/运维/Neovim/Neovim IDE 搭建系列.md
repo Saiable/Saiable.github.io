@@ -1,7 +1,6 @@
 ---
-title: Neovim IDE 搭建系列
+title: 'Neovim IDE 搭建系列'
 cover: false
-abbrlink: 12357
 ---
 
 

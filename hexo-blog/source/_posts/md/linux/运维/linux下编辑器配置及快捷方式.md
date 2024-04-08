@@ -1,8 +1,7 @@
 ---
-title: linux下编辑器配置及快捷方式
-date: '2022/7/8 07:15:24'
+title: 'linux下编辑器配置及快捷方式'
+date: 2022/7/8 07:15:24
 cover: false
-abbrlink: 22401
 ---
 [toc]
 

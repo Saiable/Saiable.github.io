@@ -1,12 +1,11 @@
 ---
-title: Au
+title: 'Au'
+date: 2022-4-11 09:03:02
 cover: false
 tags:
-  - Adobe
+- Adobe
 categories: Adobe
 typora-root-url: au
-abbrlink: 47089
-date: 2022-04-11 09:03:02
 ---
 
 

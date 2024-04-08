@@ -1,11 +1,10 @@
 ---
-title: Express基础
+title: 'Express基础'
+date: 2023-01-07 09:03:02
 cover: false
 tags:
-  - Express
+- Express
 categories: Express
-abbrlink: 55206
-date: 2023-01-07 09:03:02
 ---
 
 [Vue+Express+Mysql 全栈初体验 - 掘金 (juejin.cn)](https://juejin.cn/post/6844903853704347655#heading-0)

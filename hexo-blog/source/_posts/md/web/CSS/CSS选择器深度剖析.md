@@ -1,11 +1,11 @@
 ---
-title: CSS选择器深度剖析
+title: 'CSS选择器深度剖析'
+date: 2022-7-9 07:28:42
 cover: false
 tags:
-  - CSS选择器
-categories: CSS
-abbrlink: 39619
-date: 2022-07-09 07:28:42
+- CSS选择器
+categories: 'CSS'
+
 ---
 
 

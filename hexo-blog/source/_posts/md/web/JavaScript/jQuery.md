@@ -1,11 +1,11 @@
 ---
-title: jQuery
+title: 'jQuery'
+date: 2022-08-08 07:15:24
 cover: false
 tags:
-  - jQuery
-categories: jQuery
-abbrlink: 38683
-date: 2022-08-08 07:15:24
+- jQuery
+categories: 'jQuery'
+
 ---
 
 # jQuery

@@ -1,11 +1,10 @@
 ---
-title: vue-cli脚手架的应用、配置和性能优化
-date: '2022/8/9 09:03:02'
+title: 'vue-cli脚手架的应用、配置和性能优化'
+date: 2022/8/9 09:03:02
 cover: false
 tags:
-  - vue-cli
+- vue-cli
 typora-root-url: vue-cli脚手架的应用、配置和性能优化
-abbrlink: 8276
 ---
 
 # vue-cli中自定义配置webpack

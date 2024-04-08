@@ -1,11 +1,10 @@
 ---
-title: CSS预处理语言
+title: 'CSS预处理语言'
+date: 2023-01-04 07:28:42
 cover: false
 tags:
-  - CSS预处理器
+- CSS预处理器
 categories: CSS预处理器
-abbrlink: 45293
-date: 2023-01-04 07:28:42
 ---
 
 [聊聊CSS预处理语言 - 掘金 (juejin.cn)](https://juejin.cn/post/7175899080080490552)

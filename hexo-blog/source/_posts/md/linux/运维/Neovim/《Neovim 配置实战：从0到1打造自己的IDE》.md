@@ -1,9 +1,8 @@
 ---
 title: Neovim 配置实战：从0到1打造自己的IDE
 cover: false
+date: 2022-7-25 20:34:51
 typora-root-url: 《Neovim 配置实战：从0到1打造自己的IDE》
-abbrlink: 40481
-date: 2022-07-25 20:34:51
 ---
 
 

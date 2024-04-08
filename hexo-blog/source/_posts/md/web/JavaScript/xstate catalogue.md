@@ -1,12 +1,11 @@
 ---
-title: xstate catalogue
+title: 'xstate catalogue'
+date: 2023-04-08 09:03:02
 cover: false
 tags:
-  - xstate
+- xstate
 categories: xstate
 typora-root-url: xstate catalogue
-abbrlink: 23589
-date: 2023-04-08 09:03:02
 ---
 
 > https://swimlanes.io/

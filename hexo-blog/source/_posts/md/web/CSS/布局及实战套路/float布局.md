@@ -1,13 +1,12 @@
 ---
-title: float布局
+title: 'float布局'
+date: 2022-9-1 07:28:42
 cover: false
 tags:
-  - CSS
-  - CSS布局
-categories: CSS
+- CSS
+- CSS布局
+categories: 'CSS'
 typora-root-url: float布局
-abbrlink: 46274
-date: 2022-09-01 07:28:42
 ---
 
 # 浮动

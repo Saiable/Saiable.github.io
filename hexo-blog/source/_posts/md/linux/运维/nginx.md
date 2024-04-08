@@ -1,11 +1,10 @@
 ---
-title: nginx基本实践
+title: 'nginx基本实践'
+date: 2022-11-13 14:15:24
 cover: false
 tags:
-  - Linux
+- Linux
 typora-root-url: nginx
-abbrlink: 27973
-date: 2022-11-13 14:15:24
 ---
 
 # 常用网站

@@ -1,9 +1,8 @@
 ---
-title: 使用hexo搭建博客
-date: '2022/7/8 07:15:24'
+title: '使用hexo搭建博客'
+date: 2022/7/8 07:15:24
 cover: false
 typora-root-url: 使用hexo搭建博客
-abbrlink: 50074
 ---
 
 

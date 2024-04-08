@@ -1,12 +1,11 @@
 ---
-title: Vue2最佳实践
+title: 'Vue2最佳实践'
+date: 2022-8-8 07:15:24
 cover: false
 tags:
-  - Vue
+- Vue
 categories: Vue
 typora-root-url: Vue2最佳实践
-abbrlink: 30259
-date: 2022-08-08 07:15:24
 ---
 
 > 本文主要是Vue2的最佳实践，Vue3特有的在单独的文章中列出

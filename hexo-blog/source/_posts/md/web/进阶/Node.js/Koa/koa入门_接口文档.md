@@ -1,15 +1,14 @@
 ---
 title: koa入门_接口文档 v1.0.0
-date: '2022/8/9 6:52:13'
+date: 2022/8/9 6:52:13
 cover: false
 tags:
-  - Koa
+- Koa
 categories: Koa
 toc_number: true
 typora-root-url: koa
 headingLevel: 2
-generator: '@tarslib/widdershins v4.0.15'
-abbrlink: 34679
+generator: "@tarslib/widdershins v4.0.15"
 ---
 
 # koa入门

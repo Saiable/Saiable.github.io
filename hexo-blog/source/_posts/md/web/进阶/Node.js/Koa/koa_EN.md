@@ -1,16 +1,14 @@
 ---
 title: Koa2 build API service
-date: '2022/7/31 23:52:13'
+date: 2022/7/31 23:52:13
 cover: false
 tags:
-  - Koa
+- Koa
 categories: Koa
-description: >-
-  Contents: koa project initialization, directory structure optimization, ORM
-  tool inheritance, error handling
+description: 'Contents: koa project initialization, directory structure optimization, ORM tool inheritance, error handling'
 toc_number: true
+
 typora-root-url: koa_EN
-abbrlink: 32863
 ---
 
 # Getting started with koa2

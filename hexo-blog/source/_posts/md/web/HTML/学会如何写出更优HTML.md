@@ -1,11 +1,10 @@
 ---
-title: 如何写出更优HTML
-date: '2022/8/10 09:03:02'
+title: '如何写出更优HTML'
+date: 2022/8/10 09:03:02
 cover: false
 tags:
-  - HTML
-categories: HTML
-abbrlink: 45925
+- HTML
+categories: 'HTML'
 ---
 
 

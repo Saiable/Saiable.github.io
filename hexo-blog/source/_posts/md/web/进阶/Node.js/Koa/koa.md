@@ -1,14 +1,13 @@
 ---
 title: Koa2搭建API服务
-date: '2022/7/25 23:52:13'
+date: 2022/7/25 23:52:13
 cover: false
 tags:
-  - Koa
+- Koa
 categories: Koa
-description: 包含内容：koa项目初始化、目录结构优化、ORM工具继承、错误处理
+description: "包含内容：koa项目初始化、目录结构优化、ORM工具继承、错误处理"
 toc_number: true
 typora-root-url: koa
-abbrlink: 65398
 ---
 
 # Koa2入门

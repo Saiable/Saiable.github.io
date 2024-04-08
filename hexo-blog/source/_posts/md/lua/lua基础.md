@@ -1,11 +1,10 @@
 ---
-title: lua基础
+title: 'lua基础'
+date: 2023-01-20 09:03:02
 cover: false
 tags:
-  - lua
+- lua
 categories: lua
-abbrlink: 59685
-date: 2023-01-20 09:03:02
 ---
 
 > 背景：现在众多 VIM 插件都有了基于 Lua 的原生 Neovim 版本，使得 Neovim 脱离了传统 VIM 的束缚

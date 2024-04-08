@@ -1,11 +1,10 @@
 ---
-title: Vant Weapp
+title: 'Vant Weapp'
+date: 2022-12-15 07:15:24
 cover: false
 tags:
-  - Vant
+- Vant
 typora-root-url: Vant Weapp
-abbrlink: 62956
-date: 2022-12-15 07:15:24
 ---
 
 # 背景知识

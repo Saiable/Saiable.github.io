@@ -1,8 +1,7 @@
 ---
-title: Ajax前后端数据通信
+title: 'Ajax前后端数据通信'
+date: 2022-8-8 07:15:24
 cover: false
-abbrlink: 18679
-date: 2022-08-08 07:15:24
 ---
 
 # HTTP

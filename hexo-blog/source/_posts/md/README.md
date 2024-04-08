@@ -1,12 +1,13 @@
 ---
-title: 学习方式
+title: '学习方式'
+date: 2022-8-9 09:03:02
 cover: false
 tags:
-  - 学习方式
+- 学习方式
 categories: 学习方式
-abbrlink: 1434
-date: 2022-08-09 09:03:02
 ---
+
+
 
 # 学习方式
 

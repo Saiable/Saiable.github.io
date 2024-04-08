@@ -1,12 +1,11 @@
 ---
 title: 《你不知道的JavaScript》(三卷)
+date: 2022-11-14 07:31:58
 cover: false
 tags:
-  - 书籍
-categories: 书籍
+- 书籍
+categories: '书籍'
 typora-root-url: 《你不知道的JavaScript》(三卷)
-abbrlink: 56777
-date: 2022-11-14 07:31:58
 ---
 
 [TOC]

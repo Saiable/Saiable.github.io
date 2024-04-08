@@ -1,8 +1,7 @@
 ---
-title: Bootstrap
+title: 'Bootstrap'
+date: 2022-8-9 07:28:42
 cover: false
-abbrlink: 11629
-date: 2022-08-09 07:28:42
 ---
 
 [Bootstrap中文网 (bootcss.com)](https://www.bootcss.com/)

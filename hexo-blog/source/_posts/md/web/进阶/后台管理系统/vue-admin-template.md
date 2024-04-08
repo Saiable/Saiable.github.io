@@ -1,6 +1,5 @@
 ---
-title: vue-admin-template后台管理系统模板解析
+title: 'vue-admin-template后台管理系统模板解析'
+date: 2022-8-8 07:15:24
 cover: false
-abbrlink: 31372
-date: 2022-08-08 07:15:24
 ---

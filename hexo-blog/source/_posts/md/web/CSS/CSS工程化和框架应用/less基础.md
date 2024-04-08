@@ -1,12 +1,11 @@
 ---
-title: Less基础
+title: 'Less基础'
+date: 2022-8-9 07:28:42
 cover: false
 typora-root-url: less基础
 tags:
-  - CSS预处理器
+- CSS预处理器
 categories: CSS预处理器
-abbrlink: 31039
-date: 2022-08-09 07:28:42
 ---
 
 # `Less`

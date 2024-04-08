@@ -1,11 +1,10 @@
 ---
-title: Vant UI
+title: 'Vant UI'
+date: 2022-12-16 07:15:24
 cover: false
 tags:
-  - Vant
+- Vant
 typora-root-url: VantUI
-abbrlink: 8499
-date: 2022-12-16 07:15:24
 ---
 
 

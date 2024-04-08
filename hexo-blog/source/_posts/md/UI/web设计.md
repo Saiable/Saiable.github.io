@@ -1,9 +1,8 @@
 ---
-title: UI设计
+title: 'UI设计'
+date: 2023-9-11 09:03:02
 cover: false
 typora-root-url: web设计
-abbrlink: 62458
-date: 2023-09-11 09:03:02
 ---
 
 

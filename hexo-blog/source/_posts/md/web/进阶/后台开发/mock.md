@@ -1,9 +1,8 @@
 ---
-title: mock
+title: 'mock'
+date: 2023-01-06 07:15:24
 cover: false
 typora-root-url: mock
-abbrlink: 44613
-date: 2023-01-06 07:15:24
 ---
 
 # 常用的MOCK方案说明

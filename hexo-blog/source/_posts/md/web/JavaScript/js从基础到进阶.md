@@ -1,12 +1,11 @@
 ---
 title: JavaScript从基础到进阶
+date: 2022-09-16 09:58:44
 cover: false
 tags:
-  - javascript
-categories: javascript
+- javascript
+categories: 'javascript'
 typora-root-url: js从基础到进阶
-abbrlink: 15232
-date: 2022-09-16 09:58:44
 ---
 
 

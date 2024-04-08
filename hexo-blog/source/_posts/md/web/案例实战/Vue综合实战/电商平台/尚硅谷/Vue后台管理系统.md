@@ -1,11 +1,10 @@
 ---
-title: 电商平台Vue后台管理系统
+title: '电商平台Vue后台管理系统'
+date: 2022-8-9 07:15:24
 cover: false
 tags:
-  - 案例实战
-categories: 案例实战
-abbrlink: 21691
-date: 2022-08-09 07:15:24
+- 案例实战
+categories: '案例实战'
 ---
 
 

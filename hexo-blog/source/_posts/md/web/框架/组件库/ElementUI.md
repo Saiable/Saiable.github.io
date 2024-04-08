@@ -1,12 +1,11 @@
 ---
-title: ElementUI/Plus使用与解析
+title: 'ElementUI/Plus使用与解析'
+date: 2022-8-13 07:15:24
 cover: false
 tags:
-  - ElementUI
-  - ElementPlus
+- ElementUI
+- ElementPlus
 typora-root-url: ElementUI
-abbrlink: 5592
-date: 2022-08-13 07:15:24
 ---
 # ElementUI
 

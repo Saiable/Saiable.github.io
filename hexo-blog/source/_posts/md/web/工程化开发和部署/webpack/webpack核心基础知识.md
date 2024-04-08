@@ -1,12 +1,11 @@
 ---
-title: webpack核心基础知识
-date: '2022/8/9 09:03:02'
+title: 'webpack核心基础知识'
+date: 2022/8/9 09:03:02
 cover: false
 tags:
-  - webpack
+- webpack
 categories: webpack
 typora-root-url: webpack核心基础知识
-abbrlink: 10987
 ---
 
 # 前端工程化

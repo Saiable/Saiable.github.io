@@ -1,9 +1,8 @@
 ---
-title: hexo博客加载优化
-date: '2023/02/08 07:15:24'
+title: 'hexo博客加载优化'
+date: 2023/02/08 07:15:24
 cover: false
 typora-root-url: hexo博客加载优化
-abbrlink: 55056
 ---
 
 # 概览

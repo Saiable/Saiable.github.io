@@ -1,12 +1,11 @@
 ---
-title: electron基础
+title: 'electron基础'
+date: 2022-11-23 09:03:02
 cover: false
 tags:
-  - electron
+- electron
 categories: electron
 typora-root-url: electron基础
-abbrlink: 1041
-date: 2022-11-23 09:03:02
 ---
 
 

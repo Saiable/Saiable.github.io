@@ -1,12 +1,11 @@
 ---
-title: docker基础与进阶
+title: 'docker基础与进阶'
+date: 2023-02-21 07:15:24
 cover: false
 tags:
-  - docker
-categories: docker
+- docker
+categories: 'docker'
 typora-root-url: docker基础
-abbrlink: 36155
-date: 2023-02-21 07:15:24
 ---
 
 来源：https://www.bilibili.com/video/BV1gr4y1U7CY
@@ -1917,7 +1916,7 @@ codercom/code-server
 
     删除容器后，里面的mysql数据怎么办？
 
-  - 实战版
+  - 实战版](
 
     新建mysql容器实例
 
@@ -2154,45 +2153,7 @@ cd /data/labelstudio
 docker run -it -p 8083:8080 -v `pwd`/mydata:/label-studio/data heartexlabs/label-studio:latest
 ```
 
-## 安装`vnc`（废弃）
-
-[(11条消息) 用docker启动ubuntu的桌面环境_菜鸟怕怕的博客-CSDN博客_docker ubuntu桌面](https://blog.csdn.net/u014062332/article/details/95333615)
-
-拉取镜像：
-
-```bash
-docker pull dorowu/ubuntu-desktop-lxde-vnc
-```
-
-运行容器：
-
-```bash
-docker run -p 6080:80 -p 5900:5900 -e RESOLUTION=1920x1080 -e VNC_PASSWORD=VNC登录的密码 -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc
-```
-
-更新源：https://blog.csdn.net/qq_41296187/article/details/123723093
-
-```bash
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install aptitude
-
-sudo aptitude install xxxxx
-```
-
-安装vscode：https://blog.csdn.net/qq_50840738/article/details/126060563
-
-
-
-安装中文包（未成功）：
-
-https://www.lijiejie.com/ubuntu-vps-config-lxde-vnc/
-
-https://www.bbsmax.com/A/GBJr7y7q50/
-
-
-
-## 安装vnc2
+## 安装vnc
 
 基于新建dockerfile配置sudo，具体参考《Docker-Ubuntu环境搭建playwright环境》
 
@@ -4730,5 +4691,4 @@ docker load -i image.tar
 ```
 运行docker load后，加载的镜像是没有名称和标签的
 可以使用 docker tag [镜像id] [name]:[tag] 命令给它们重命名
-
 

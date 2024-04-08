@@ -1,11 +1,10 @@
 ---
-title: Compass
+title: 'Compass'
+date: 2023-01-04 09:28:42
 cover: false
 tags:
-  - CSS预处理器
+- CSS预处理器
 categories: CSS预处理器
-abbrlink: 39417
-date: 2023-01-04 09:28:42
 ---
 
 https://blog.csdn.net/drawlessonsfrom/article/details/115425204

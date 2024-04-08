@@ -1,11 +1,10 @@
 ---
-title: web基础及进阶路线
+title: 'web基础及进阶路线'
+date: 2022-08-09 09:03:02
 cover: false
 tags:
-  - 学习路线
+- 学习路线
 categories: 学习路线
-abbrlink: 24447
-date: 2022-08-09 09:03:02
 ---
 
 

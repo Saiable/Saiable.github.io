@@ -1,13 +1,12 @@
 ---
-title: Vue3基本使用
+title: 'Vue3基本使用'
+date: 2022-7-25 20:30:40
 cover: false
 toc_number: false
 tags:
-  - Vue3
+- Vue3
 categories: Vue
 typora-root-url: Vue3基本使用
-abbrlink: 2377
-date: 2022-07-25 20:30:40
 ---
 
 

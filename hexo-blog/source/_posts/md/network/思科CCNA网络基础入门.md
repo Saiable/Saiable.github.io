@@ -1,8 +1,7 @@
 ---
-title: 思科CCNA网络基础入门
+title: '思科CCNA网络基础入门'
+date: 2022-8-9 09:03:02
 cover: false
-abbrlink: 1273
-date: 2022-08-09 09:03:02
 ---
 
 

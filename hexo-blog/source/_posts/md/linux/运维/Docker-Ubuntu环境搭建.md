@@ -1,11 +1,10 @@
 ---
-title: Docker-Ubuntu环境搭建开发
+title: 'Docker-Ubuntu环境搭建开发'
+date: 2023-01-13 14:15:24
 cover: false
 tags:
-  - docker
+- docker
 typora-root-url: Docker-Ubuntu环境搭建
-abbrlink: 19290
-date: 2023-01-13 14:15:24
 ---
 
 `author:zzh`

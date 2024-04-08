@@ -1,8 +1,12 @@
 ---
-title: kafka
+title: 'kafka'
 date: '2022-10-9 09:03:02'
+cover: false
+tags:
+- kafka
+- bigdata
+categories: bigdata
 typora-root-url: kafka
-abbrlink: 62004
 ---
 
 引言：
@@ -27,7 +31,7 @@ Kafka是一个分布式的，基于发布/订阅模式的消息队列（Message 
 
 MQ传统应用场景之异步处理
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/41e28416c266414885e763fbbc78847f.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAU2FpYWJsZQ==,size_20,color_FFFFFF,t_70,g_se,x_16)
+![在这里插入图片描述](watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAU2FpYWJsZQ==,size_20,color_FFFFFF,t_70,g_se,x_16.png)
 
 
 
@@ -58,7 +62,7 @@ MQ传统应用场景之异步处理
 
 消息生产者生产消息发送到Queue中，然后消息消费者从Queue中取出并且消费消息。消息被消费以后，Queue中不再存储，所以消息消费中不可能消费已经被消费的消息。Queue支持存在多个消费者，但是对一个消息而言，只会有一个消费者可以消费。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/73c706e0dbba491880bf547d9d192c4d.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAU2FpYWJsZQ==,size_20,color_FFFFFF,t_70,g_se,x_16)
+![在这里插入图片描述](watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAU2FpYWJsZQ==,size_20,color_FFFFFF,t_70,g_se,x_16-171245253430625.png)
 
 #### 1.2.3.2.发布/订阅模式
 
@@ -66,13 +70,13 @@ MQ传统应用场景之异步处理
 
 消息生产者（发布）将消息发布到topic中，同时有多个消息消费者（订阅）消费该消息。和点对点方式不同，发布到topic的消息会被所有订阅者消费。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/213a47f5a60a48aea7c8c5607c1f3c5b.png)
+![在这里插入图片描述](213a47f5a60a48aea7c8c5607c1f3c5b.png)
 
 ## 1.3Kafka架构
 
 
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/620610d679a54a0eaeb77086b5f0b069.png)
+![在这里插入图片描述](620610d679a54a0eaeb77086b5f0b069.png)
 
 - **Producer**：消息生产者，就是向kafka broker发消息的客户端
 

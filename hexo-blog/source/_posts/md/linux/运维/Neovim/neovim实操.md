@@ -1,7 +1,6 @@
 ---
-title: Neovim 实操
+title: 'Neovim 实操'
 cover: false
-abbrlink: 42481
 ---
 
 

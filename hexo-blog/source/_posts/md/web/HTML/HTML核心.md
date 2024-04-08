@@ -1,12 +1,11 @@
 ---
-title: HTML核心
+title: 'HTML核心'
+date: 2022-08-10 09:03:02
 cover: false
 tags:
-  - HTML
-categories: HTML
+- HTML
+categories: 'HTML'
 typora-root-url: HTML核心
-abbrlink: 18839
-date: 2022-08-10 09:03:02
 ---
 
 [TOC]

@@ -1,8 +1,7 @@
 ---
-title: hexo博客迁移及注意事项
-cover: false
-abbrlink: 59009
+title: 'hexo博客迁移及注意事项'
 date: 2023-10-31 09:03:02
+cover: false
 ---
 
 # 背景

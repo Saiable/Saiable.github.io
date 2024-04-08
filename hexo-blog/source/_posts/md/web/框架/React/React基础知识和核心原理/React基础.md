@@ -1,13 +1,12 @@
 ---
-title: React基本使用
+title: 'React基本使用'
+date: 2023-01-12 20:30:40
 cover: false
 toc_number: false
 tags:
-  - React
-categories: React
+- React
+categories: 'React'
 typora-root-url: React基础
-abbrlink: 4967
-date: 2023-01-12 20:30:40
 ---
 
 # `React`简介

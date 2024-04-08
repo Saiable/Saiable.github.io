@@ -1,12 +1,11 @@
 ---
-title: JS设计模式
+title: 'JS设计模式'
+date: 2022-12-19 07:15:24
 cover: false
 tags:
-  - 设计模式
-categories: 设计模式
+- 设计模式
+categories: '设计模式'
 typora-root-url: JS设计模式
-abbrlink: 47964
-date: 2022-12-19 07:15:24
 ---
 
 
