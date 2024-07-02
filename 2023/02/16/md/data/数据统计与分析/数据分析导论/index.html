@@ -1,0 +1,757 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>数据分析导论 | 吕小布の博客</title><meta name="keywords" content="数据"><meta name="author" content="Sai"><meta name="copyright" content="Sai"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="需要大量的项目积累，才可谈思维  相关链接：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1a7411f7Vi&#x2F; 数据分析思维如何理解数据收集？ 谈谈指标体系的构建？ 什么是一个好的指标？ 学习方式  阶段式学习 不要妄想一口吃成一个胖子，明确现阶段学习重点，忌讳每天什么都学一点 现实中如果有各种压力，要沉下心来   解决问题 不要不带目的的学习 主动用学习到的内容，求解工作">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据分析导论">
+<meta property="og:url" content="https://mindcons.cn/2023/02/16/md/data/%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%AF%BC%E8%AE%BA/index.html">
+<meta property="og:site_name" content="吕小布の博客">
+<meta property="og:description" content="需要大量的项目积累，才可谈思维  相关链接：https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1a7411f7Vi&#x2F; 数据分析思维如何理解数据收集？ 谈谈指标体系的构建？ 什么是一个好的指标？ 学习方式  阶段式学习 不要妄想一口吃成一个胖子，明确现阶段学习重点，忌讳每天什么都学一点 现实中如果有各种压力，要沉下心来   解决问题 不要不带目的的学习 主动用学习到的内容，求解工作">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://bu.dusays.com/2023/02/10/63e583843360e.webp">
+<meta property="article:published_time" content="2023-02-16T01:03:02.000Z">
+<meta property="article:modified_time" content="2024-07-02T23:46:48.938Z">
+<meta property="article:author" content="Sai">
+<meta property="article:tag" content="数据">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://bu.dusays.com/2023/02/10/63e583843360e.webp"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://mindcons.cn/2023/02/16/md/data/%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%AF%BC%E8%AE%BA/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"61301LMFP2","apiKey":"a7627d15f4af23df7fbc3e2922471858","indexName":"mindcons","hits":{"per_page":10},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":350},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: Sai","link":"链接: ","source":"来源: 吕小布の博客","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '数据分析导论',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-07-03 07:46:48'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/custom/css/custom.min.css"><meta name="generator" content="Hexo 6.2.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://bu.dusays.com/2023/02/10/63e583843360e.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">188</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">66</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">47</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fa-sharp fa-solid fa-photo-film"></i><span> 相册</span></a></li><li><a class="site-page child" href="/bangumis/"><i class="fa-fw fas fa-video"></i><span> 番剧</span></a></li><li><a class="site-page child" href="/booklist/"><i class="fa-fw fa-solid fa-book"></i><span> 书单</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/sponsorWall/"><i class="fa-fw fas fa-money-check-alt"></i><span> 赞助墙</span></a></div><div class="menus_item"><a class="site-page" href="/comment/"><i class="fa-fw fas fa-comments"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">吕小布の博客</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li></ul></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 娱乐</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fa-sharp fa-solid fa-photo-film"></i><span> 相册</span></a></li><li><a class="site-page child" href="/bangumis/"><i class="fa-fw fas fa-video"></i><span> 番剧</span></a></li><li><a class="site-page child" href="/booklist/"><i class="fa-fw fa-solid fa-book"></i><span> 书单</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/sponsorWall/"><i class="fa-fw fas fa-money-check-alt"></i><span> 赞助墙</span></a></div><div class="menus_item"><a class="site-page" href="/comment/"><i class="fa-fw fas fa-comments"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">数据分析导论</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-02-16T01:03:02.000Z" title="发表于 2023-02-16 09:03:02">2023-02-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-07-02T23:46:48.938Z" title="更新于 2024-07-03 07:46:48">2024-07-03</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%95%B0%E6%8D%AE/">数据</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="数据分析导论"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
+<p>需要大量的项目积累，才可谈思维</p>
+</blockquote>
+<p>相关链接：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1a7411f7Vi/">https://www.bilibili.com/video/BV1a7411f7Vi/</a></p>
+<h1 id="数据分析思维"><a href="#数据分析思维" class="headerlink" title="数据分析思维"></a>数据分析思维</h1><p>如何理解数据收集？</p>
+<p>谈谈指标体系的构建？</p>
+<p>什么是一个好的指标？</p>
+<p>学习方式</p>
+<ul>
+<li>阶段式学习<ul>
+<li>不要妄想一口吃成一个胖子，明确现阶段学习重点，忌讳每天什么都学一点</li>
+<li>现实中如果有各种压力，要沉下心来</li>
+</ul>
+</li>
+<li>解决问题<ul>
+<li>不要不带目的的学习</li>
+<li>主动用学习到的内容，求解工作中的问题</li>
+<li>量化学习的目标</li>
+</ul>
+</li>
+<li>温故知新<ul>
+<li>好记性不如烂笔头</li>
+</ul>
+</li>
+<li>输出<ul>
+<li>输出是一种高效的学习方式</li>
+<li>能否准确无误的解释给他人听？能否用通俗易懂的方式解释</li>
+</ul>
+</li>
+</ul>
+<h2 id="三种核心思维"><a href="#三种核心思维" class="headerlink" title="三种核心思维"></a>三种核心思维</h2><h3 id="结构化"><a href="#结构化" class="headerlink" title="结构化"></a>结构化</h3><p>实际问题：</p>
+<ul>
+<li>想到一点是一点</li>
+<li>做假设，乱做假设</li>
+<li>一次性分析，没有复用性</li>
+<li>没结果</li>
+</ul>
+<p>将分析思维结构化</p>
+<ul>
+<li><p>核心论点</p>
+<ul>
+<li>将论点归纳和整理</li>
+<li>寻找金字塔的塔顶，它可以是假设，是问题，是预测，是原因</li>
+</ul>
+</li>
+<li><p>结构拆解</p>
+<ul>
+<li>将论点递进和拆解</li>
+<li>自上而下，将核心论点层层拆解成分论点，上下关系呈因果或依赖关系</li>
+</ul>
+</li>
+<li><p>MECE</p>
+<ul>
+<li>相互独立，完全穷尽</li>
+<li>论点之间避免交叉和重复</li>
+<li>分论点要尽量完善，将论点完善和补充</li>
+</ul>
+</li>
+<li><p>验证</p>
+<ul>
+<li>不论核心论点还是分论点，都应该是可量化的</li>
+<li>用数据说话，它们必然是可验证的</li>
+</ul>
+</li>
+</ul>
+<p>案例：现在有一个线下销售的产品，发现8月的销量骤降，和去年同比下降了20%</p>
+<p>如何分析？</p>
+<p>核心论点：销量</p>
+<p>分论点：内部、外部</p>
+<p>分论点完善</p>
+<p>销量</p>
+<ul>
+<li>内部<ul>
+<li>消费者</li>
+<li>地区<ul>
+<li>地区A<ul>
+<li>销售单价</li>
+<li>销售率</li>
+</ul>
+</li>
+<li>地区B</li>
+<li>地区C</li>
+</ul>
+</li>
+<li>时间</li>
+</ul>
+</li>
+<li>外部<ul>
+<li>市场竞争</li>
+<li>市场容量</li>
+<li>政策风险</li>
+</ul>
+</li>
+</ul>
+<p>我们可以对于每个子节点进行分析</p>
+<p><img src="/2023/02/16/md/data/%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%AF%BC%E8%AE%BA/image-20240626101820442.png" alt="image-20240626101820442"></p>
+<p>结构化是分析的思维，但它还不够数据，每个子节点的产生，仍然有发散的缺点</p>
+<h3 id="公式化"><a href="#公式化" class="headerlink" title="公式化"></a>公式化</h3><p>公式化</p>
+<ul>
+<li>上下互为计算</li>
+<li>一切皆可量化</li>
+<li>左右呈关联</li>
+<li>最小不可分割</li>
+</ul>
+<p>大部分的数据分析，围绕加减乘除就足够了</p>
+<p>加法</p>
+<ul>
+<li>不同类别的业务叠加</li>
+</ul>
+<p>减法</p>
+<ul>
+<li>计算业务间的逻辑关系</li>
+</ul>
+<p>乘除法</p>
+<ul>
+<li>各种比例或比率</li>
+</ul>
+<p><img src="/2023/02/16/md/data/%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%AF%BC%E8%AE%BA/image-20240626101424145.png" alt="image-20240626101424145"></p>
+<h3 id="业务化"><a href="#业务化" class="headerlink" title="业务化"></a>业务化</h3><p>如何预估上海地区的共享单车投放量</p>
+<ul>
+<li>从城市流动人口计算</li>
+<li>从人口密度计算</li>
+<li>从城市交通数据计算</li>
+<li>从保有自行车计算</li>
+<li>单车是由损耗的，计算公式中应该考虑单车的消耗因素</li>
+</ul>
+<p>是否贴合业务</p>
+<ul>
+<li><p>有没有从业务放的角度思考</p>
+</li>
+<li><p>真的分析出原因了吗</p>
+</li>
+<li><p>能不能将分析结果落地</p>
+</li>
+</ul>
+<p>一家销售公司业绩没有起色，对它进行了分析</p>
+<ul>
+<li>销售人员的效率降低，因为士气低落</li>
+<li>产品质量不佳，和同期竞争对手比没有优势</li>
+<li>价格平平，顾客不喜欢</li>
+</ul>
+<p>上述看似是正确的结论，其实都不是结论</p>
+<p>用结构化+公式化思考，获得的最终分析论点。很多时候，是现象。数据是某个结果的现象，但不代表原因。</p>
+<p>业务思维</p>
+<p>由<code>我是数据分析师，我会设里哪些指标</code>，转向<code>如果我是参与其中的人，我会怎么考虑/哪些行为</code></p>
+<p>多和业务方沟通，多从业务方的角度思考，最好能参与到业务中去</p>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><img src="image-20240626110258118.png" alt="image-20240626110258118" style="zoom: 67%;" />
+
+
+
+<p>练习：某一天，学院的课程学习人数下跌了，通过上述思维方式，进行假设分析</p>
+<h2 id="数据分析的思维技巧"><a href="#数据分析的思维技巧" class="headerlink" title="数据分析的思维技巧"></a>数据分析的思维技巧</h2><p>上述讲解了思维整体框架，本节介绍一些常用的思维技巧</p>
+<h3 id="象限法"><a href="#象限法" class="headerlink" title="象限法"></a>象限法</h3><p>二象限</p>
+<ul>
+<li>价值-流失</li>
+</ul>
+<p>三象限</p>
+<ul>
+<li>RFM<ul>
+<li>R：最近一次消费</li>
+<li>F：消费频率</li>
+<li>M：消费金额</li>
+</ul>
+</li>
+</ul>
+<p>多元</p>
+<p>核心</p>
+<ul>
+<li>象限法是一种策略驱动的思维</li>
+</ul>
+<p>应用</p>
+<ul>
+<li>适用范围广、战略分析、产品分析、市场分析、客户管理、用户管理、商品管理等</li>
+</ul>
+<p>优点</p>
+<ul>
+<li>直观、清晰，对数据进行人工的划分。划分结果可以直接应用于策略</li>
+</ul>
+<p>须知</p>
+<ul>
+<li>象限划分可以按中位数，也可以按平均数，或者是经验</li>
+</ul>
+<h3 id="多维法"><a href="#多维法" class="headerlink" title="多维法"></a>多维法</h3><p>用户统计维度</p>
+<ul>
+<li>性别</li>
+<li>年龄</li>
+</ul>
+<p>用户行为维度</p>
+<ul>
+<li>注册用户</li>
+<li>用户偏好</li>
+<li>用户兴趣</li>
+<li>用户流失</li>
+</ul>
+<p>消费维度</p>
+<ul>
+<li>消费金额</li>
+<li>消费频率</li>
+<li>消费水平</li>
+</ul>
+<p>商品维度</p>
+<ul>
+<li>商品品类</li>
+<li>商品品牌</li>
+<li>商品属性</li>
+</ul>
+<p>通常会钻取，来获得更准确的分析</p>
+<p>核心</p>
+<ul>
+<li>多维法是一种精细驱动的思维</li>
+</ul>
+<p>应用</p>
+<ul>
+<li>只要数据齐全且丰富，均可以应用</li>
+</ul>
+<p>优点</p>
+<ul>
+<li>处理大数据量，维度丰富且复杂的数据有较好的效果。但是维度过多会消耗不少时间</li>
+</ul>
+<p>须知</p>
+<ul>
+<li>对不同维度进行交叉分析时，需要注意辛普森悖论</li>
+</ul>
+<h3 id="假设法"><a href="#假设法" class="headerlink" title="假设法"></a>假设法</h3><p>很多时候，数据分析是没有数据可明确参考的：</p>
+<ul>
+<li>新进入一个市场</li>
+<li>公司开拓某样产品</li>
+<li>预测一年后的销量</li>
+<li>产品的基础数据十分糟糕，拿不到数据</li>
+</ul>
+<p>证明一个拿不到数据的问题，研判其效果好坏</p>
+<p>场景：</p>
+<p>公司在节日进行了一次营销活动，APP上的销量数据整体比上周上升了20%，因为统计失误问题，拿不到明细数据，也就是说，活动效果是一个黑盒。</p>
+<p>现在的问题是，销量本身就有可能因为节日而提高，那么怎么证明活动是有效还是无效的呢？</p>
+<p>你是自营电商的数据分析师，现在想知道商品提价后，收入会不会有变化？你会怎么做？</p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1a7411f7Vi?p=9">https://www.bilibili.com/video/BV1a7411f7Vi?p=9</a></p>
+<h3 id="指数法"><a href="#指数法" class="headerlink" title="指数法"></a>指数法</h3><p>旨在解决<code>衡量</code>的问题，制定一个统一的标准</p>
+<ul>
+<li>中国今年的经济指标如何？</li>
+<li>美国NBA最佳球星是谁？</li>
+<li>竞争对手的产品表现如何？</li>
+</ul>
+<p>线性加权</p>
+<p>反比例</p>
+<p>log</p>
+<p>核心</p>
+<ul>
+<li>指数法是一种目标驱动的思维</li>
+</ul>
+<p>应用</p>
+<ul>
+<li>和假设法不同，假设法是缺乏有效的数据，指数法是无法利用数据而将其加工成可利用的</li>
+</ul>
+<p>优点</p>
+<ul>
+<li>目标驱动力强，直观，简洁，有效。对业务具有一定的指导作用。一旦设立指数，不要频繁变动</li>
+</ul>
+<p>须知</p>
+<ul>
+<li>指数法没法统一标准，很多指数更依赖经验的加工</li>
+</ul>
+<h3 id="二八法"><a href="#二八法" class="headerlink" title="二八法"></a>二八法</h3><p>帕累托图</p>
+<p>数据中，20%的变量将直接产生80%的效果，数据分析更应该围绕这20%作文章</p>
+<p>持续关注TopN的数据，是一个非常好的习惯，尤其在部分行业</p>
+<p>虽然指标很多，但往往某些指标更有价值，二八法则不仅能分析数据，也能管理数据</p>
+<p>核心</p>
+<ul>
+<li>二八法是一种只抓重点的思维</li>
+</ul>
+<p>应用</p>
+<ul>
+<li>二八法则存在于几乎所有的领域，所以这种分析思维没有局限</li>
+</ul>
+<p>优点</p>
+<ul>
+<li>和业务紧密相关，和KPI更紧密相关。几乎花费最少的精力就能达到不错的效果，性价比很优</li>
+</ul>
+<p>须知</p>
+<ul>
+<li>在条件允许的情况下，数据分析依旧不能放弃全局，否则会让思路变得狭隘</li>
+</ul>
+<h3 id="对比法"><a href="#对比法" class="headerlink" title="对比法"></a>对比法</h3><p>好的数据分析，一定是比例或者比率</p>
+<p>好的数据分析，一定会用到对比</p>
+<ul>
+<li>竞争对手对比</li>
+<li>类别对比</li>
+<li>特征和属性对比</li>
+<li>时间同比环比</li>
+<li>转化对比</li>
+<li>前后变化对比</li>
+</ul>
+<p>核心</p>
+<ul>
+<li>对比法是一种挖掘数据规律的思维</li>
+</ul>
+<p>应用</p>
+<ul>
+<li>对比更多是一种习惯，是数据分析的牛角尖，一次合格的分析，一定会用到n次对比</li>
+</ul>
+<p>优点</p>
+<ul>
+<li>对比法可以发现很多数据间的规律，它可以与任何思维技巧结合，比如多维对比、象限对比、假设对比等</li>
+</ul>
+<p>须知</p>
+<ul>
+<li>在条件允许的情况下，数据分析依旧不能放弃全局，否则会让思路变得狭隘</li>
+</ul>
+<h3 id="漏斗法"><a href="#漏斗法" class="headerlink" title="漏斗法"></a>漏斗法</h3><p>核心</p>
+<ul>
+<li>漏斗法是一种流程化的思维</li>
+</ul>
+<p>应用</p>
+<ul>
+<li>涉及到变化和流程的都能应用</li>
+</ul>
+<p>优点</p>
+<ul>
+<li>单一的漏斗分析没有用，转化率20%，但是能说明什么呢？要和其他分析思维结合，比如多维，比如对比</li>
+</ul>
+<p>须知</p>
+<ul>
+<li>单一的转化率没有，单一的转化率没有，单一的转化率没有</li>
+</ul>
+<h2 id="如何在业务中锻炼分析能力"><a href="#如何在业务中锻炼分析能力" class="headerlink" title="如何在业务中锻炼分析能力"></a>如何在业务中锻炼分析能力</h2><ul>
+<li><p>好奇心</p>
+<ul>
+<li><p>多问自己为什么，多思考</p>
+</li>
+<li><p><code>啤酒与尿布</code>的故事，其实是杜撰的</p>
+<p><img src="/2023/02/16/md/data/%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%AF%BC%E8%AE%BA/image-20240627095849539.png" alt="image-20240627095849539"></p>
+</li>
+</ul>
+</li>
+<li><p>多练习</p>
+<ul>
+<li><p>生活中练习</p>
+<p><img src="/2023/02/16/md/data/%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%AF%BC%E8%AE%BA/image-20240627100024677.png" alt="image-20240627100024677"></p>
+<p><img src="/2023/02/16/md/data/%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%AF%BC%E8%AE%BA/image-20240627100202154.png" alt="image-20240627100202154"></p>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="业务"><a href="#业务" class="headerlink" title="业务"></a>业务</h1><h2 id="为什么业务重要"><a href="#为什么业务重要" class="headerlink" title="为什么业务重要"></a>为什么业务重要</h2><p><img src="/2023/02/16/md/data/%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%AF%BC%E8%AE%BA/image-20240627100506879.png" alt="image-20240627100506879"></p>
+<p>惟有理解业务，才能建立业务数据模型</p>
+<h2 id="经典的业务分析指标"><a href="#经典的业务分析指标" class="headerlink" title="经典的业务分析指标"></a>经典的业务分析指标</h2><p>指标：</p>
+<p>模型未动，指标先行</p>
+<p>如果你不能衡量它，你就无法增长它</p>
+<h3 id="市场营销指标"><a href="#市场营销指标" class="headerlink" title="市场营销指标"></a>市场营销指标</h3><h4 id="客户-x2F-用户生命周期"><a href="#客户-x2F-用户生命周期" class="headerlink" title="客户&#x2F;用户生命周期"></a>客户&#x2F;用户生命周期</h4><h3 id="产品运营指标"><a href="#产品运营指标" class="headerlink" title="产品运营指标"></a>产品运营指标</h3><h3 id="用户行为指标"><a href="#用户行为指标" class="headerlink" title="用户行为指标"></a>用户行为指标</h3><h3 id="电子商务指标"><a href="#电子商务指标" class="headerlink" title="电子商务指标"></a>电子商务指标</h3><h3 id="流量指标"><a href="#流量指标" class="headerlink" title="流量指标"></a>流量指标</h3><h2 id="怎么生成指标"><a href="#怎么生成指标" class="headerlink" title="怎么生成指标"></a>怎么生成指标</h2><p>组合</p>
+<h2 id="如何建立业务分析框架"><a href="#如何建立业务分析框架" class="headerlink" title="如何建立业务分析框架"></a>如何建立业务分析框架</h2><ul>
+<li>从指标角度</li>
+<li>从业务角度</li>
+<li>从流程角度<ul>
+<li>业务落地后的闭环</li>
+</ul>
+</li>
+</ul>
+<h3 id="市场营销模型"><a href="#市场营销模型" class="headerlink" title="市场营销模型"></a>市场营销模型</h3><h3 id="AARRR模型"><a href="#AARRR模型" class="headerlink" title="AARRR模型"></a>AARRR模型</h3><h3 id="用户行为模型（内容平台）"><a href="#用户行为模型（内容平台）" class="headerlink" title="用户行为模型（内容平台）"></a>用户行为模型（内容平台）</h3><h3 id="电子商务模型"><a href="#电子商务模型" class="headerlink" title="电子商务模型"></a>电子商务模型</h3><h3 id="流量模型"><a href="#流量模型" class="headerlink" title="流量模型"></a>流量模型</h3><h2 id="如何应对各种业务场景"><a href="#如何应对各种业务场景" class="headerlink" title="如何应对各种业务场景"></a>如何应对各种业务场景</h2><ul>
+<li>练习</li>
+<li>熟悉业务</li>
+<li>应用三种核心思维</li>
+<li>归纳和整理出指标</li>
+<li>画出框架</li>
+<li>检查、应用、修正</li>
+<li>应用和迭代</li>
+</ul>
+<p>如果对整体框架感到吃力，可以先做一个模块</p>
+<h2 id="数据化管理业务"><a href="#数据化管理业务" class="headerlink" title="数据化管理业务"></a>数据化管理业务</h2><p>30%数据统计</p>
+<p>70%数据管理</p>
+<h1 id="Excel"><a href="#Excel" class="headerlink" title="Excel"></a>Excel</h1><p>敏捷、快速、需要立即响应的需求</p>
+<ul>
+<li>Excel</li>
+<li>SQL</li>
+</ul>
+<p>常规、频繁、可复用可工程化的需求</p>
+<ul>
+<li>Python</li>
+<li>BI</li>
+<li>ETL</li>
+</ul>
+<p>详细内容见Excel相关内容笔记</p>
+<p><img src="/2023/02/16/md/data/%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%AF%BC%E8%AE%BA/image-20240627154006894.png" alt="image-20240627154006894"></p>
+<p><img src="/2023/02/16/md/data/%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%AF%BC%E8%AE%BA/image-20240627154057836.png" alt="image-20240627154057836"></p>
+<h1 id="数据可视化"><a href="#数据可视化" class="headerlink" title="数据可视化"></a>数据可视化</h1><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1AE411P7hH">https://www.bilibili.com/video/BV1AE411P7hH</a></p>
+<p>目的：让数据更加高效</p>
+<p>让读者更高效阅读，而不单是自己使用</p>
+<p>突出数据背后的规律</p>
+<p>突出重要的因素</p>
+<p>最后是美观</p>
+<h2 id="图表的基础概念"><a href="#图表的基础概念" class="headerlink" title="图表的基础概念"></a>图表的基础概念</h2><p>维度</p>
+<ul>
+<li>描述分析的角度和属性、分类数据</li>
+<li>时间、地理位置、产品类型等</li>
+</ul>
+<p>度量</p>
+<ul>
+<li>具体的参考数值，数值数据</li>
+<li>元、销量、销售金额等</li>
+</ul>
+<img src="image-20240627160316772.png" alt="image-20240627160316772" style="zoom:67%;" />
+
+
+
+
+
+<h2 id="常见的图表类型和应用"><a href="#常见的图表类型和应用" class="headerlink" title="常见的图表类型和应用"></a>常见的图表类型和应用</h2><h3 id="散点图"><a href="#散点图" class="headerlink" title="散点图"></a>散点图</h3><p>散点图主要解释数据之间的规律</p>
+<p>维度：0+，作为颜色</p>
+<p>度量：2</p>
+<h4 id="气泡图"><a href="#气泡图" class="headerlink" title="气泡图"></a>气泡图</h4><p>气泡图是散点图的变种，引入了第三个度量作为气泡的大小</p>
+<p>维度：1+，作为颜色</p>
+<p>度量：3，其中1个是气泡大小</p>
+<h4 id="单轴散点图"><a href="#单轴散点图" class="headerlink" title="单轴散点图"></a>单轴散点图</h4><p>维度作Y轴，更倾向于洞察数据在不同类别下的数据规律</p>
+<p>维度：1+，Y轴</p>
+<p>度量：2</p>
+<p>散点图一般用来分析：</p>
+<p>客户消费维度</p>
+<ul>
+<li>消费金额和消费次数的关系</li>
+<li>消费金额和最后一次距今消费天数的关系</li>
+<li>消费次数和最后一次距今消费天数的关系</li>
+</ul>
+<p>客户其他消费维度</p>
+<ul>
+<li>消费金额和消费折扣的关系</li>
+<li>消费金额和会员积分的关系</li>
+<li>消费次数和会员距离的关系</li>
+</ul>
+<p>垂直领域消费维度</p>
+<ul>
+<li>投资金额和投资次数的关系（金融）</li>
+<li>最近一次距今消费和使用次数（Saas）</li>
+</ul>
+<h3 id="折线图"><a href="#折线图" class="headerlink" title="折线图"></a>折线图</h3><p>折线图经常用来观察数据随时间变化的趋势</p>
+<p>折线图中的维度不宜过多，否则会非常混乱和复杂</p>
+<p>维度：1+，可对比</p>
+<p>度量：1+</p>
+<p>时间维度：X轴</p>
+<h4 id="面积图"><a href="#面积图" class="headerlink" title="面积图"></a>面积图</h4><p>面积图是折线图的变种，面积图更注重数据类别之间，随时间趋势的变化关系</p>
+<p>维度：1</p>
+<p>度量：2</p>
+<h3 id="柱形图"><a href="#柱形图" class="headerlink" title="柱形图"></a>柱形图</h3><p>柱形图是类别之间的关系</p>
+<p>维度：2</p>
+<p>度量：1+</p>
+<h4 id="直方图"><a href="#直方图" class="headerlink" title="直方图"></a>直方图</h4><p>柱形图的统计型变种</p>
+<p>维度：0</p>
+<p>度量：1</p>
+<h3 id="饼图"><a href="#饼图" class="headerlink" title="饼图"></a>饼图</h3><p>饼图可以理解为环状的柱形图，饼图的类别不宜过多</p>
+<p>饼图除了ppt，分析时没啥用</p>
+<p>维度：1</p>
+<p>度量：1</p>
+<h3 id="漏斗图"><a href="#漏斗图" class="headerlink" title="漏斗图"></a>漏斗图</h3><p>漏斗图是对转化过程的直观展示，单一的漏斗图没啥用，也是面向ppt</p>
+<p>漏斗图的转化步骤不应该超过七个</p>
+<h3 id="雷达图"><a href="#雷达图" class="headerlink" title="雷达图"></a>雷达图</h3><p>适用于个体的数据和属性可视化，比较偏描述性数据，常见于CRM，用户画像</p>
+<p>维度：1+</p>
+<p>度量：1+</p>
+<h2 id="常见的高级图表和应用"><a href="#常见的高级图表和应用" class="headerlink" title="常见的高级图表和应用"></a>常见的高级图表和应用</h2><h3 id="树形图"><a href="#树形图" class="headerlink" title="树形图"></a>树形图</h3><p>适合数据量较大的情况，尤其类别较多</p>
+<p>比如各类电商的SKU</p>
+<p>维度：1+</p>
+<p>度量：1</p>
+<h3 id="桑基图"><a href="#桑基图" class="headerlink" title="桑基图"></a>桑基图</h3><p>桑基图是揭示数据复杂变化趋势的图表。面积图是线性维度，而桑基图可以一对多或者多对一。</p>
+<p>维度：2 source target</p>
+<p>度量：1</p>
+<p>可以用来表示用户在网站上的行为轨迹、用户忠诚度变化</p>
+<h3 id="热力图"><a href="#热力图" class="headerlink" title="热力图"></a>热力图</h3><p>数据在空间上的变化规律。比如地理空间，网页浏览</p>
+<p>维度：2</p>
+<p>度量：1</p>
+<p>热力图不一定是纯粹的空间，也可以是属性和维度的规律组合，比如把它变成星期表</p>
+<p>可以揭示一些行业的时间规律，比如零售行业（周六、周日生意好，节假日生意好），仅仅用折线图不够</p>
+<p>维度：1</p>
+<p>度量：1</p>
+<p><img src="/2023/02/16/md/data/%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%AF%BC%E8%AE%BA/image-20240702090755566.png" alt="image-20240702090755566"></p>
+<h3 id="关系图"><a href="#关系图" class="headerlink" title="关系图"></a>关系图</h3><p>展现不同类别之间的数据关系，常见于各类社交社会媒体</p>
+<p>维度：2 source target</p>
+<p>度量：0+</p>
+<h3 id="箱线图"><a href="#箱线图" class="headerlink" title="箱线图"></a>箱线图</h3><p>箱线图是统计用图标，用来研究和观察数据分布，也能对比数据分布。</p>
+<p>维度：1+</p>
+<p>度量：1</p>
+<h3 id="标靶图"><a href="#标靶图" class="headerlink" title="标靶图"></a>标靶图</h3><p>也称为子弹图，是变种的条形图。常用于衡量业务销售情况。</p>
+<p>维度：1+</p>
+<p>度量：2</p>
+<p><img src="/2023/02/16/md/data/%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%AF%BC%E8%AE%BA/image-20240702092418794.png" alt="image-20240702092418794"></p>
+<h3 id="词云图"><a href="#词云图" class="headerlink" title="词云图"></a>词云图</h3><p>文本分析利器，ppt常客，卖弄大数据之必备图表</p>
+<p>维度：1</p>
+<p>度量：0</p>
+<h3 id="地理图"><a href="#地理图" class="headerlink" title="地理图"></a>地理图</h3><p>数据和空间之间的关系。地理图即可以通过经纬度的数据度量绘制，也能通过省市的类别维度绘制</p>
+<p>维度：1（经纬或行政）</p>
+<p>度量：1</p>
+<p>一般都是省市，如果要精确到街道，需要写代码，掉地图api</p>
+<h1 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h1><p>见数据库相关文章笔记</p>
+<h1 id="统计学"><a href="#统计学" class="headerlink" title="统计学"></a>统计学</h1><p>见统计学相关文章笔记</p>
+<h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><p>见python相关文章笔记</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a target="_blank" rel="noopener" href="https://github.com/Saiable">Sai</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://mindcons.cn/2023/02/16/md/data/%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%AF%BC%E8%AE%BA/">https://mindcons.cn/2023/02/16/md/data/数据统计与分析/数据分析导论/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://mindcons.cn" target="_blank">吕小布の博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%95%B0%E6%8D%AE/">数据</a></div><div class="post_share"><div class="social-share" data-image="https://bu.dusays.com/2023/02/10/63e583843360e.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://bu.dusays.com/2023/02/10/63e580229ee01.webp" target="_blank"><img class="post-qr-code-img" src="https://bu.dusays.com/2023/02/10/63e580229ee01.webp" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://bu.dusays.com/2023/02/09/63e48775d4f42.webp" target="_blank"><img class="post-qr-code-img" src="https://bu.dusays.com/2023/02/09/63e48775d4f42.webp" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/02/16/md/data/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E6%96%B9%E6%B3%95%E8%AE%BA/"><img class="prev-cover" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">数据挖掘方法论</div></div></a></div><div class="next-post pull-right"><a href="/2023/02/08/md/tools/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/hexo/hexo%E5%8D%9A%E5%AE%A2%E5%8A%A0%E8%BD%BD%E4%BC%98%E5%8C%96/"><img class="next-cover" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">hexo博客加载优化</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2023/02/16/md/data/%E6%95%B0%E6%8D%AE%E5%BC%95%E8%A8%80/" title="数据引言"><img class="cover" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-02-16</div><div class="title">数据引言</div></div></a></div><div><a href="/2023/02/16/md/data/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E6%96%B9%E6%B3%95%E8%AE%BA/" title="数据挖掘方法论"><img class="cover" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-02-16</div><div class="title">数据挖掘方法论</div></div></a></div><div><a href="/2023/05/04/md/data/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/Excel/Excel%E6%B2%BB%E7%90%86%E4%B8%8E%E5%85%A5%E5%BA%93/" title="Excel治理与入库"><img class="cover" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-05-04</div><div class="title">Excel治理与入库</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://bu.dusays.com/2023/02/10/63e583843360e.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Sai</div><div class="author-info__description">天可补,海可填,南山可移。日月既往,不可复追。</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">188</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">66</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">47</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Saiable"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://bu.dusays.com/2023/02/10/63e57e822f198.webp" target="_blank" title="QQ"><i class="fa-brands fa-qq"></i></a><a class="social-icon" href="https://bu.dusays.com/2023/02/10/63e57f8ac9fae.webp" target="_blank" title="WeChat"><i class="fa-brands fa-weixin"></i></a><a class="social-icon" href="https://github.com/Saiable" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:mindcons@foxmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">日月既往,不可复追。</div></div><div class="xpand" style="height:200px;"><canvas class="illo" width="800" height="800" style="max-width: 200px; max-height: 200px; touch-action: none; width: 640px; height: 640px;"></canvas></div><script src="https://npm.elemecdn.com/ethan4116-blog/lib/js/other/two-people/twopeople1.js"></script><script src="https://npm.elemecdn.com/ethan4116-blog/lib/js/other/two-people/zdog.dist.js"></script><script id="rendered-js" src="https://npm.elemecdn.com/ethan4116-blog/lib/js/other/two-people/twopeople.js"></script><style>.card-widget.card-announcement {
+margin: 0;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+canvas {
+display: block;
+margin: 0 auto;
+cursor: move;
+}</style><div class="card-widget tzy-right-widget" id="card-wechat"><div id="flip-wrapper"><div id="flip-content"><div class="face"></div><div class="back face"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%80%9D%E7%BB%B4"><span class="toc-text">数据分析思维</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E7%A7%8D%E6%A0%B8%E5%BF%83%E6%80%9D%E7%BB%B4"><span class="toc-text">三种核心思维</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E5%8C%96"><span class="toc-text">结构化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%AC%E5%BC%8F%E5%8C%96"><span class="toc-text">公式化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%9A%E5%8A%A1%E5%8C%96"><span class="toc-text">业务化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%8F%E7%BB%93"><span class="toc-text">小结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E7%9A%84%E6%80%9D%E7%BB%B4%E6%8A%80%E5%B7%A7"><span class="toc-text">数据分析的思维技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B1%A1%E9%99%90%E6%B3%95"><span class="toc-text">象限法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E7%BB%B4%E6%B3%95"><span class="toc-text">多维法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%81%87%E8%AE%BE%E6%B3%95"><span class="toc-text">假设法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%87%E6%95%B0%E6%B3%95"><span class="toc-text">指数法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E5%85%AB%E6%B3%95"><span class="toc-text">二八法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E6%AF%94%E6%B3%95"><span class="toc-text">对比法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%BC%8F%E6%96%97%E6%B3%95"><span class="toc-text">漏斗法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%9A%E5%8A%A1%E4%B8%AD%E9%94%BB%E7%82%BC%E5%88%86%E6%9E%90%E8%83%BD%E5%8A%9B"><span class="toc-text">如何在业务中锻炼分析能力</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%9A%E5%8A%A1"><span class="toc-text">业务</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%9A%E5%8A%A1%E9%87%8D%E8%A6%81"><span class="toc-text">为什么业务重要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%8F%E5%85%B8%E7%9A%84%E4%B8%9A%E5%8A%A1%E5%88%86%E6%9E%90%E6%8C%87%E6%A0%87"><span class="toc-text">经典的业务分析指标</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E6%8C%87%E6%A0%87"><span class="toc-text">市场营销指标</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%A2%E6%88%B7-x2F-%E7%94%A8%E6%88%B7%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="toc-text">客户&#x2F;用户生命周期</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%A7%E5%93%81%E8%BF%90%E8%90%A5%E6%8C%87%E6%A0%87"><span class="toc-text">产品运营指标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E8%A1%8C%E4%B8%BA%E6%8C%87%E6%A0%87"><span class="toc-text">用户行为指标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%B5%E5%AD%90%E5%95%86%E5%8A%A1%E6%8C%87%E6%A0%87"><span class="toc-text">电子商务指标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%81%E9%87%8F%E6%8C%87%E6%A0%87"><span class="toc-text">流量指标</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%8E%E4%B9%88%E7%94%9F%E6%88%90%E6%8C%87%E6%A0%87"><span class="toc-text">怎么生成指标</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E4%B8%9A%E5%8A%A1%E5%88%86%E6%9E%90%E6%A1%86%E6%9E%B6"><span class="toc-text">如何建立业务分析框架</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%82%E5%9C%BA%E8%90%A5%E9%94%80%E6%A8%A1%E5%9E%8B"><span class="toc-text">市场营销模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AARRR%E6%A8%A1%E5%9E%8B"><span class="toc-text">AARRR模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E8%A1%8C%E4%B8%BA%E6%A8%A1%E5%9E%8B%EF%BC%88%E5%86%85%E5%AE%B9%E5%B9%B3%E5%8F%B0%EF%BC%89"><span class="toc-text">用户行为模型（内容平台）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%B5%E5%AD%90%E5%95%86%E5%8A%A1%E6%A8%A1%E5%9E%8B"><span class="toc-text">电子商务模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%81%E9%87%8F%E6%A8%A1%E5%9E%8B"><span class="toc-text">流量模型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%BA%94%E5%AF%B9%E5%90%84%E7%A7%8D%E4%B8%9A%E5%8A%A1%E5%9C%BA%E6%99%AF"><span class="toc-text">如何应对各种业务场景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%8C%96%E7%AE%A1%E7%90%86%E4%B8%9A%E5%8A%A1"><span class="toc-text">数据化管理业务</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Excel"><span class="toc-text">Excel</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96"><span class="toc-text">数据可视化</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%BE%E8%A1%A8%E7%9A%84%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5"><span class="toc-text">图表的基础概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84%E5%9B%BE%E8%A1%A8%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%BA%94%E7%94%A8"><span class="toc-text">常见的图表类型和应用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%A3%E7%82%B9%E5%9B%BE"><span class="toc-text">散点图</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B0%94%E6%B3%A1%E5%9B%BE"><span class="toc-text">气泡图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%95%E8%BD%B4%E6%95%A3%E7%82%B9%E5%9B%BE"><span class="toc-text">单轴散点图</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8A%98%E7%BA%BF%E5%9B%BE"><span class="toc-text">折线图</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%9D%A2%E7%A7%AF%E5%9B%BE"><span class="toc-text">面积图</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%B1%E5%BD%A2%E5%9B%BE"><span class="toc-text">柱形图</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%B4%E6%96%B9%E5%9B%BE"><span class="toc-text">直方图</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A5%BC%E5%9B%BE"><span class="toc-text">饼图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%BC%8F%E6%96%97%E5%9B%BE"><span class="toc-text">漏斗图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9B%B7%E8%BE%BE%E5%9B%BE"><span class="toc-text">雷达图</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84%E9%AB%98%E7%BA%A7%E5%9B%BE%E8%A1%A8%E5%92%8C%E5%BA%94%E7%94%A8"><span class="toc-text">常见的高级图表和应用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%91%E5%BD%A2%E5%9B%BE"><span class="toc-text">树形图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A1%91%E5%9F%BA%E5%9B%BE"><span class="toc-text">桑基图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%83%AD%E5%8A%9B%E5%9B%BE"><span class="toc-text">热力图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E7%B3%BB%E5%9B%BE"><span class="toc-text">关系图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%B1%E7%BA%BF%E5%9B%BE"><span class="toc-text">箱线图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%87%E9%9D%B6%E5%9B%BE"><span class="toc-text">标靶图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%8D%E4%BA%91%E5%9B%BE"><span class="toc-text">词云图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%B0%E7%90%86%E5%9B%BE"><span class="toc-text">地理图</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-text">数据库</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%9F%E8%AE%A1%E5%AD%A6"><span class="toc-text">统计学</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Python"><span class="toc-text">Python</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/06/25/md/data/%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1%E4%B8%8E%E5%88%86%E6%9E%90/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B7%A5%E4%BD%9C%E6%B5%81/" title="数据分析工作流">数据分析工作流</a><time datetime="2024-06-25T01:03:02.000Z" title="发表于 2024-06-25 09:03:02">2024-06-25</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/06/14/md/data/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/Excel/%E6%95%B0%E6%8D%AE%E9%80%8F%E8%A7%86%E8%A1%A8/" title="数据透视表">数据透视表</a><time datetime="2024-06-14T01:03:02.000Z" title="发表于 2024-06-14 09:03:02">2024-06-14</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/06/11/md/data/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/PowerBI/PowerBI%E5%9F%BA%E7%A1%80%E4%B8%8E%E8%BF%9B%E9%98%B6/" title="PowerBI基础与进阶">PowerBI基础与进阶</a><time datetime="2024-06-11T01:03:02.000Z" title="发表于 2024-06-11 09:03:02">2024-06-11</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/06/10/md/data/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/PowerQuery/PowerQuery%E5%9F%BA%E7%A1%80%E4%B8%8E%E8%BF%9B%E9%98%B6/" title="PowerQuery基础与进阶">PowerQuery基础与进阶</a><time datetime="2024-06-10T01:03:02.000Z" title="发表于 2024-06-10 09:03:02">2024-06-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/06/02/md/life/%E6%8A%A4%E8%82%A4%E6%B2%BB%E7%97%98%E7%B3%BB%E5%88%97/" title="护肤治痘系列">护肤治痘系列</a><time datetime="2024-06-01T22:03:53.135Z" title="发表于 2024-06-02 06:03:53">2024-06-02</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://bu.dusays.com/2023/02/10/63e57cef87293.webp')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 <i id="heartbeat" class="fa fas fa-heartbeat"></i> Sai</div><a href="https://icp.gov.moe/?keyword=20230203" target="_blank">萌ICP备20230203号</a><div class="footer_custom_text"><p><a target="_blank" href="https://hexo.io/"><img src="https://bu.dusays.com/2023/02/09/63e488a78b827.webp" title="博客框架为Hexo"></a>&nbsp;<a target="_blank" href="https://butterfly.js.org/"><img src="https://bu.dusays.com/2023/02/10/63e57f321880a.webp" title="主题采用butterfly"></a></p></div></div><link rel="stylesheet" href="/custom/css/heartbeat.min.css" ></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="fa-solid fa-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="fa-solid fa-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="fa-solid fa-arrow-rotate-right"></i></div><div class="rightMenu-item" id="menu-home"><i class="fa-solid fa-house"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" href="/archives/"><i class="fa-solid fa-archive"></i><span>文章归档</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="fa-solid fa-folder-open"></i><span>文章分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="fa-solid fa-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuNormal"><div class="rightMenu-item" id="menu-translate"><i class="fa-solid fa-earth-asia"></i><span>繁简切换</span></div><div class="rightMenu-item" id="menu-darkmode"><i class="fa-solid fa-moon"></i><span>切换模式</span></div><div class="rightMenu-item" id="menu-print"><i class="fa-solid fa-print fa-fw"></i><span>打印页面</span></div></div></div><div id="rightmenu-mask"></div><div id="myscoll"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/algoliasearch/dist/algoliasearch-lite.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instantsearch.js/dist/instantsearch.production.min.js"></script><script src="/js/search/algolia.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo.mindcons.cn/',
+      region: '',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.mindcons.cn/',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><canvas id="universe"></canvas><script defer src="/custom/js/universe.js"></script><script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script><script defer data-pjax src="/custom/js/rightMenu.js"></script><script defer data-pjax src="/custom/js/cat.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><script>window.$crisp = [];
+window.CRISP_WEBSITE_ID = "717070d8-e449-4d60-b9b6-c1421478f42c";
+(function () {
+  d = document;
+  s = d.createElement("script");
+  s.src = "https://client.crisp.chat/l.js";
+  s.async = 1;
+  d.getElementsByTagName("head")[0].appendChild(s);
+})();
+$crisp.push(["safe", true])
+
+if (true) {
+  $crisp.push(["do", "chat:hide"])
+  $crisp.push(["on", "chat:closed", function() {
+    $crisp.push(["do", "chat:hide"])
+  }])
+  var chatBtnFn = () => {
+    var chatBtn = document.getElementById("chat_btn")
+    chatBtn.addEventListener("click", function(){
+      $crisp.push(["do", "chat:show"])
+      $crisp.push(["do", "chat:open"])
+
+    });
+  }
+  chatBtnFn()
+} else {
+  if (true) {
+    function chatBtnHide () {
+      $crisp.push(["do", "chat:hide"])
+    }
+    function chatBtnShow () {
+      $crisp.push(["do", "chat:show"])
+    }
+  }
+}</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
